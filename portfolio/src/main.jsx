@@ -16,7 +16,7 @@ const profile = {
   baseUrl: import.meta.env.BASE_URL
 };
 
-const resumeUrl = `${profile.baseUrl}Muhammad_Hedia_Abd-Elhamed_CV.pdf`;
+const resumeUrl = `${profile.baseUrl}cv.html`;
 
 const skills = [
   ['Backend', 'Java · Spring Boot · Spring Security · JPA · REST APIs'],
