@@ -6,7 +6,7 @@ const profile = {
   name: 'Muhammad Hedia Abd-Elhamed',
   email: 'm7mdhedia3bd@gmail.com',
   github: 'https://github.com/Mr-Wolv',
-  linkedin: 'https://www.linkedin.com/in/muhammad-h-bakr-21582b3ab/',
+  linkedin: 'https://www.linkedin.com/in/muhammad-bakr-21582b3ab/',
   merhouse: 'https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026',
   merhouseLive: 'https://merhouse-354e7.web.app',
   merhouseApi: 'https://m7mdhbkr-merhouse-backend.hf.space',
