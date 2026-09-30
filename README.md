@@ -1,82 +1,41 @@
-<p align="center">
-  <a href="https://mr-wolv.github.io/Mr-Wolv/">View my portfolio</a>
-</p>
+# Muhammad Bakr - Junior Backend Software Engineer
 
-<p align="center"><i>"The only person better than yesterday’s me is tomorrow’s me."</i></p>
+Computer Science graduate from Cairo University focused on backend development, software engineering, algorithms, and distributed systems.
 
-<img src="https://miro.medium.com/v2/resize:fit:3200/format:webp/1*0KFB17_NGTPB0XWyc4BSgQ.jpeg" width="100%" />
+## Core stack
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=I+Engineer+Logic+into+Systems;Under-the-hood+Architect;Problem+Solver+by+Nature" alt="Typing SVG" />
-</p>
+- **Backend:** Java, Spring Boot, Spring Security, Spring Data JPA, REST APIs
+- **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB, SQL
+- **Distributed systems:** Microservices, Apache Kafka, Event-Driven Architecture, Kubernetes
+- **Engineering:** Docker, GitHub Actions, CI/CD, Maven, Flyway, JUnit, Mockito, Testcontainers
+- **Frontend:** React, TypeScript, Vite
+- **Languages & problem solving:** Java, Python, C++, C#, JavaScript, algorithms, information theory
 
-<p align="center">
-  <img src="https://c.tenor.com/VkwGHu4htYYAAAAd/tenor.gif" width="280">
-</p>
+## Selected work
 
----
+### MerHouse
+B2B fulfillment coordination platform demonstrating backend application engineering, security, persistence, migrations, testing, Docker, CI/CD, and multi-surface delivery.
 
-### 🧠 The Architect's Mindset
-> Driven by understanding **how things work under the hood**, from the bare metal to high-level abstractions.
+**Stack:** Java 21, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, React/TypeScript, Docker, GitHub Actions
 
-* 🎓 **Graduate** | Faculty of Science — Computer Science
-* ⚙️ **Specialization** | Software Engineering, Algorithms & Systems
-* 🔍 **Obsession** | Efficiency, internal mechanics, and textbook-perfect implementations
+### EventFlow
+Distributed event-driven backend demonstrating microservices, Kafka, at-least-once processing, idempotency, retry and dead-letter handling, Kubernetes, Strimzi, and in-cluster CI verification.
 
----
+**Stack:** Java 21, Spring Boot, Apache Kafka, Kubernetes, Docker, GitHub Actions
 
-### 🎯 Core Focus & Expertise
-<p align="left">
-  <table>
-    <tr>
-      <td><b>Backend & Systems</b></td>
-      <td>Java, Node.js, Python, System Design</td>
-    </tr>
-    <tr>
-      <td><b>Data Science</b></td>
-      <td>AI/ML, Database Optimization, Information Theory</td>
-    </tr>
-    <tr>
-      <td><b>Foundations</b></td>
-      <td>DSA, Cryptography, Low-level Logic</td>
-    </tr>
-  </table>
-</p>
+### Wordle Strat-Console
+Deterministic algorithmic solver using information gain, probability-aware scoring, and a feedback-driven evaluation loop.
 
----
+**Stack:** Python, algorithms, information theory, HTTP/JSON, WebView2
 
-### 🚀 Featured Architectural Work
-* 🧠 **[Neural Networks Project]** — Built to understand the math, not just the library.
-* 🔐 **[Cryptography Implementations]** — Textbook-level transformations implemented from scratch.
-* 🧩 **[Problem Solving]** — A living archive of algorithmic efficiency and edge-case handling.
+### LeetCode / Problem Solving
+Long-running practice repository covering algorithms, data structures, SQL, and structured problem solving across Java, Python, JavaScript, and C#.
 
----
+## How I work
 
-### ⚡ Current Deep Dives
-* 📊 **Mathematical Optimization Theories**; Grasping more information on higher Maths for AI.
-* 🏗️ **Systems Analysis & Design**; Advancing knowledge in system design and SDLC.
+I prefer understanding requirements and constraints before choosing an implementation. I value simple architecture, explicit tradeoffs, automated validation, reproducible workflows, and evidence over unsupported claims.
 
----
+## Links
 
-### 🧰 The Toolkit
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=java,python,js,nodejs,react,mongodb,linux,docker,git&theme=dark" />
-</p>
-
----
-
-### 📊 Performance Metrics
-<p align="center">
-  <a href="https://wakatime.com/@MHBakr">
-    <img src="https://wakatime.com/share/@MHBakr/69b00bca-8007-4db5-98c1-eddae7cce215.png" width="80%" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mr-Wolv&theme=2077" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Mr-Wolv&theme=2077" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mr-Wolv&theme=2077" />
-</p>
+- Portfolio: https://mr-wolv.github.io/Mr-Wolv/
+- LinkedIn: https://www.linkedin.com/in/muhammad-bakr-21582b3ab/
