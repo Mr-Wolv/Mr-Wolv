@@ -10,7 +10,9 @@ const profile = {
   merhouse: 'https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026',
   merhouseLive: 'https://merhouse-354e7.web.app',
   merhouseApi: 'https://m7mdhbkr-merhouse-backend.hf.space',
+  eventflow: 'https://github.com/Mr-Wolv/EventFlow_Bakr101_2026',
   wordle: 'https://github.com/Mr-Wolv/Wordle_Solver',
+  leetcode: 'https://github.com/Mr-Wolv/LeetCode_Bakr101_2024',
   chess: 'https://github.com/Mr-Wolv/Chess_Studio',
   skillsRepo: 'https://github.com/Mr-Wolv/Skill_Playground_Bakr101_2026',
   baseUrl: import.meta.env.BASE_URL
@@ -19,13 +21,13 @@ const profile = {
 const resumeUrl = `${profile.baseUrl}cv.html`;
 
 const skills = [
-  ['Backend', 'Java · Spring Boot · Spring Security · JPA · REST APIs'],
-  ['Data', 'PostgreSQL · Oracle SQL · MongoDB · SQL'],
-  ['Engineering', 'Docker · Git · GitHub Actions · CI/CD'],
-  ['Algorithms & Systems', 'Python · C++ · algorithms · cryptography'],
-  ['Frontend', 'React · TypeScript · Vite · working knowledge'],
-  ['AI / Systems', 'Transformers · RAG · agentic AI workflows'],
-  ['Languages', 'Arabic (native) · English (C1)']
+  ['Backend', 'Java · Spring Boot · Spring Security · Spring Data JPA · Hibernate · REST APIs'],
+  ['Data', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB · SQL'],
+  ['Systems', 'Microservices · Apache Kafka · Event-Driven Architecture · Kubernetes · distributed systems fundamentals'],
+  ['Testing & Delivery', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · GitHub Actions · CI/CD · Maven · Flyway'],
+  ['Frontend', 'React · TypeScript · Vite'],
+  ['Languages & Problem Solving', 'Java · Python · C++ · C# · JavaScript · algorithms · information theory'],
+  ['Additional', 'Node.js · Express.js · Mongoose · JavaFX · cryptography']
 ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
@@ -50,11 +52,11 @@ function App() {
           <div className="hero-copy">
             <div className="status"><i /> Available for software engineering opportunities</div>
             <h1>Backend-focused engineer who likes to <em>understand the system</em> before building it.</h1>
-            <p className="hero-lede">Computer Science graduate from Cairo University, focused on backend development, data, algorithms, and practical software engineering.</p>
+            <p className="hero-lede">Computer Science graduate from Cairo University, focused on backend development, software engineering, algorithms, and distributed systems.</p>
             <div className="hero-actions">
               <a className="button primary" href="#work">Explore my work <Arrow /></a>
               <a className="button ghost" href={resumeUrl}>View CV <Arrow /></a>
-              <a className="button ghost" href={`mailto:${profile.email}`}>Get in touch</a>
+              <a className="button ghost" href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
             </div>
           </div>
           <aside className="hero-aside">
@@ -91,10 +93,26 @@ function App() {
             <div className="project-side"><div className="architecture"><span>React / Vite</span><b>↓</b><span>REST API</span><b>↓</b><span>Spring Boot</span><b>↓</b><span>PostgreSQL</span></div><small>Web + Android shell · automated tests · CI quality gates</small></div>
           </article>
 
-          <div className="work-grid work-grid-three">
-            <article className="work-card"><span className="card-index">02</span><h3>Wordle Strat-Console</h3><p>A deterministic strategy solver using game-tree evaluation, information theory, probability-aware scoring, and a real feedback loop.</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
-            <article className="work-card"><span className="card-index">03</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
-            <article className="work-card"><span className="card-index">04</span><h3>Engineering tooling</h3><p>A governed skill repository for AI-assisted engineering workflows, with catalog validation, mirror parity checks, documentation, and automation.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
+          <article className="project-feature project-feature-secondary">
+            <div className="project-number">02</div>
+            <div className="project-body">
+              <div className="project-title-row"><div><p className="project-kicker">DISTRIBUTED SYSTEMS PROJECT</p><h3>EventFlow</h3></div><span className="pill">Event-driven backend</span></div>
+              <p className="project-description">A focused distributed backend demonstrating asynchronous service communication, failure handling, idempotent processing, and Kubernetes deployment.</p>
+              <div className="tag-row"><span>Java 21</span><span>Spring Boot</span><span>Kafka</span><span>Kubernetes</span><span>Strimzi</span><span>Docker</span><span>GitHub Actions</span></div>
+              <div className="project-links"><a href={profile.eventflow} target="_blank" rel="noreferrer">Source & documentation <Arrow /></a></div>
+            </div>
+            <div className="project-side"><div className="architecture"><span>Orders Service</span><b>↓</b><span>Kafka</span><b>↓</b><span>Fulfillment Service</span><b>↓</b><span>Kubernetes</span></div><small>Idempotency · retries · dead-letter handling · in-cluster smoke tests</small></div>
+          </article>
+
+          <div className="work-grid">
+            <article className="work-card"><span className="card-index">03</span><h3>Wordle Strat-Console</h3><p>A deterministic strategy solver using information gain, probability-aware scoring, and a real feedback loop.</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">04</span><h3>LeetCode / Problem Solving</h3><p>A long-running practice repository spanning Java, Python, JavaScript, SQL, and C# problem solving.</p><a href={profile.leetcode} target="_blank" rel="noreferrer">Read the problem-solving repo <Arrow /></a></article>
+          </div>
+
+          <div className="section-head work-subhead"><h2>More work.</h2><p>Additional projects remain public for deeper technical review.</p></div>
+          <div className="work-grid">
+            <article className="work-card"><span className="card-index">05</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">06</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
           </div>
         </section>
 
@@ -102,10 +120,10 @@ function App() {
           <div className="container about-grid">
             <div><SectionLabel>02 · About</SectionLabel><h2>Grounded in fundamentals. Comfortable crossing stacks.</h2></div>
             <div className="about-copy">
-              <p>I am a Computer Science graduate who is most interested in backend and general software engineering. Java and Spring Boot are my strongest backend tools, while my project work has also taken me through databases, algorithms, frontend systems, Docker, CI, AI tooling, cryptography, and language processing.</p>
+              <p>I am a Computer Science graduate who is most interested in backend and general software engineering. Java and Spring Boot are my strongest backend tools, while my project work has also taken me through databases, algorithms, frontend systems, Docker, CI, distributed systems, cryptography, and problem solving in multiple languages.</p>
+              <p>I also have C# problem-solving experience, which complements my Java background and makes moving between the two ecosystems a familiar transition at the language level. I do not present C#/.NET as my primary production stack.</p>
               <p>Since graduation, I have continued through independent software development and professional development while looking for my first professional engineering role.</p>
-              <p>I do not treat a technology as an identity. If a project requires a different stack, I focus on the underlying engineering concepts and migrate deliberately.</p>
-              <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Graduated 25 January 2026 · GPA 3.289 / 5 · Very Good with Honors</span></div>
+              <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Graduated January 2026 · GPA 3.289 / 5 · Very Good with Honors</span></div>
             </div>
           </div>
         </section>
@@ -125,7 +143,7 @@ function App() {
         </section>
 
         <section id="contact" className="contact-section">
-          <div className="container contact-inner"><div><SectionLabel>05 · Contact</SectionLabel><h2>Have a problem worth building?</h2><p>I'm open to software engineering internships, junior opportunities, and serious engineering projects.</p></div><a className="contact-email" href={`mailto:${profile.email}`}>{profile.email} <Arrow /></a></div>
+          <div className="container contact-inner"><div><SectionLabel>05 · Contact</SectionLabel><h2>Have a problem worth building?</h2><p>I'm open to junior software engineering opportunities, internships, and serious engineering projects.</p></div><a className="contact-email" href={`mailto:${profile.email}`}>{profile.email} <Arrow /></a></div>
         </section>
       </main>
 
