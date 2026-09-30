@@ -1,6 +1,23 @@
-# Muhammad Hedia Abd-Elhamed — Portfolio
+# Muhammad Hedia Abd-Elhamed - Portfolio
 
 A dark, engineering-focused personal portfolio built with React + Vite and deployed as a static site through GitHub Pages.
+
+## Current positioning
+
+- Junior Backend Software Engineer
+- Core backend stack: Java, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL
+- Distributed systems: Apache Kafka, Event-Driven Architecture, Kubernetes
+- Engineering: Docker, GitHub Actions, CI/CD, automated testing
+- Supporting languages and tools: Python, C++, C#, JavaScript, React, TypeScript, SQL
+
+## Selected work
+
+- **MerHouse** - B2B fulfillment coordination platform
+- **EventFlow** - distributed event-driven backend
+- **Wordle Strat-Console** - deterministic algorithmic solver
+- **LeetCode / Problem Solving** - multi-language algorithms and SQL practice
+
+Additional work remains available on GitHub, including Chess Studio and Engineering Tooling.
 
 ## Run locally
 
@@ -24,19 +41,6 @@ The portfolio is designed for the GitHub Pages project site:
 
 The Vite base path is configured for `/Mr-Wolv/` and the repository deployment workflow publishes the built `dist/` directory to the `gh-pages` branch.
 
-## GitHub Pages activation
+## CV
 
-The repository workflow builds the site and publishes `portfolio/dist` to the `gh-pages` branch.
-After the first successful workflow run, enable GitHub Pages for this repository from **Settings → Pages** and select **Deploy from a branch → `gh-pages` / `/ (root)`**.
-
-The CV is published with the site at `Muhammad_Hedia_Abd-Elhamed_CV.pdf` and is linked from the portfolio navigation and hero.
-
-## V1 goals
-
-- Backend/software-engineering positioning
-- Strong project evidence rather than a résumé dump
-- MerHouse as the flagship project
-- Concrete secondary projects instead of generic project categories
-- Academic achievement visible without dominating the site
-- Mobile responsive
-- Static deployment with no backend dependency
+The current CV is published with the site as `cv.html` and linked from the portfolio navigation and hero.
