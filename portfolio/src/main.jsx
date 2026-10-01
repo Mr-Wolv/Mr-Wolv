@@ -11,6 +11,7 @@ const profile = {
   merhouseLive: 'https://merhouse-354e7.web.app',
   merhouseApi: 'https://m7mdhbkr-merhouse-backend.hf.space',
   eventflow: 'https://github.com/Mr-Wolv/EventFlow_Bakr101_2026',
+  queryforge: 'https://github.com/Mr-Wolv/QueryForge_Bakr101_2026',
   wordle: 'https://github.com/Mr-Wolv/Wordle_Solver',
   leetcode: 'https://github.com/Mr-Wolv/LeetCode_Bakr101_2024',
   chess: 'https://github.com/Mr-Wolv/Chess_Studio',
@@ -27,7 +28,7 @@ const skills = [
   ['Cloud & Infrastructure', 'AWS (SQS · Lambda · DynamoDB · S3 · IAM) · Terraform · LocalStack'],
   ['Testing & Delivery', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · GitHub Actions · CI/CD · Maven · Flyway'],
   ['Frontend', 'React · TypeScript · Vite'],
-  ['Languages & Problem Solving', 'Java · Python · C++ · C# · JavaScript · algorithms · information theory'],
+  ['Languages & Problem Solving', 'Java · Python · C++ · C# · JavaScript · algorithms'],
   ['Additional', 'Node.js · Express.js · Mongoose · JavaFX · cryptography']
 ];
 
@@ -53,7 +54,7 @@ function App() {
           <div className="hero-copy">
             <div className="status"><i /> Available for software engineering opportunities</div>
             <h1>Backend-focused engineer who likes to <em>understand the system</em> before building it.</h1>
-            <p className="hero-lede">Computer Science graduate from Cairo University, focused on backend development, software engineering, algorithms, distributed systems, and practical cloud engineering.</p>
+            <p className="hero-lede">Computer Science graduate from Cairo University, focused on backend development, software engineering, databases, distributed systems, and practical cloud engineering.</p>
             <div className="hero-actions">
               <a className="button primary" href="#work">Explore my work <Arrow /></a>
               <a className="button ghost" href={resumeUrl}>View CV <Arrow /></a>
@@ -106,15 +107,27 @@ function App() {
             <div className="project-side"><div className="architecture"><span>Kafka path</span><b>↓</b><span>Spring services</span><b>↓</b><span>Kubernetes</span><b>↔</b><span>AWS path: SQS → Lambda → DynamoDB + S3</span></div><small>At-least-once processing · retries · dead letters · in-cluster and LocalStack CI verification</small></div>
           </article>
 
+          <article className="project-feature project-feature-secondary">
+            <div className="project-number">03</div>
+            <div className="project-body">
+              <div className="project-title-row"><div><p className="project-kicker">DATABASE & PERFORMANCE ENGINEERING</p><h3>QueryForge</h3></div><span className="pill">PostgreSQL performance</span></div>
+              <p className="project-description">A focused Spring Boot service used to investigate database performance through controlled, reproducible experiments across dataset scale, query plans, indexing, pagination, and concurrency.</p>
+              <div className="tag-row"><span>Java 25</span><span>Spring Boot 3.5.5</span><span>PostgreSQL 17</span><span>Docker</span><span>k6</span><span>EXPLAIN ANALYZE</span><span>Testcontainers</span><span>GitHub Actions</span></div>
+              <div className="project-links"><a href={profile.queryforge} target="_blank" rel="noreferrer">Source, benchmarks & evidence <Arrow /></a></div>
+              <p className="muted">At 1M rows, filtered-search p95 fell from 8.18 s to 130 ms (~63×) after a workload-shaped index; further experiments identified the connection pool as the next measured bottleneck.</p>
+            </div>
+            <div className="project-side"><div className="architecture"><span>REST API</span><b>↓</b><span>Spring Boot</span><b>↓</b><span>PostgreSQL</span><b>↕</b><span>k6 benchmarks</span></div><small>Dataset scaling · query plans · indexing · keyset pagination · concurrency experiments</small></div>
+          </article>
+
           <div className="work-grid">
-            <article className="work-card"><span className="card-index">03</span><h3>Wordle Strat-Console</h3><p>A deterministic strategy solver using information gain, probability-aware scoring, and a real feedback loop.</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
             <article className="work-card"><span className="card-index">04</span><h3>LeetCode / Problem Solving</h3><p>A long-running practice repository spanning Java, Python, JavaScript, SQL, and C# problem solving.</p><a href={profile.leetcode} target="_blank" rel="noreferrer">Read the problem-solving repo <Arrow /></a></article>
           </div>
 
           <div className="section-head work-subhead"><h2>More work.</h2><p>Additional projects remain public for deeper technical review.</p></div>
           <div className="work-grid">
-            <article className="work-card"><span className="card-index">05</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
-            <article className="work-card"><span className="card-index">06</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">05</span><h3>Wordle Strat-Console</h3><p>A deterministic game solver retained as an additional algorithms project, with web, CLI, and desktop delivery paths.</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">06</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">07</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
           </div>
         </section>
 
@@ -122,10 +135,10 @@ function App() {
           <div className="container about-grid">
             <div><SectionLabel>02 · About</SectionLabel><h2>Grounded in fundamentals. Comfortable crossing stacks.</h2></div>
             <div className="about-copy">
-              <p>I am a Computer Science graduate who is most interested in backend and general software engineering. Java and Spring Boot are my strongest backend tools, while my project work has also taken me through databases, algorithms, frontend systems, Docker, CI, distributed systems, cloud infrastructure, cryptography, and problem solving in multiple languages.</p>
-              <p>I also built a serverless AWS variant of EventFlow using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. It was integration-tested locally with LocalStack under enforced IAM and automated in CI; I do not present it as a production AWS deployment.</p>
-              <p>I also have C# problem-solving experience, which complements my Java background and makes moving between the two ecosystems a familiar transition at the language level. I do not present C#/.NET as my primary production stack.</p>
-              <p>Since graduation, I have continued through independent software development and professional development while looking for my first professional engineering role.</p>
+              <p>I am a Computer Science graduate who is most interested in backend and general software engineering. Java and Spring Boot are my strongest backend tools, while my project work has also taken me through databases, frontend systems, Docker, CI, distributed systems, cloud infrastructure, and problem solving in multiple languages.</p>
+              <p>I built EventFlow to study distributed event processing and also implemented a serverless AWS variant using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. The AWS path was integration-tested locally with LocalStack under enforced IAM and automated in CI; I do not present it as a production AWS deployment.</p>
+              <p>I built QueryForge to study database behavior rather than assume it: deterministic datasets, execution-plan analysis, workload-shaped indexes, pagination strategies, and concurrency experiments are all backed by reproducible measurements.</p>
+              <p>I also have C# problem-solving experience, which complements my Java background. C#/.NET is not presented as my primary production stack.</p>
               <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Graduated January 2026 · GPA 3.289 / 5 · Very Good with Honors</span></div>
             </div>
           </div>
