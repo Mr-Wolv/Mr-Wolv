@@ -13,39 +13,37 @@ h1{margin:0 0 3px;font-size:28px}h2{font-size:15px;border-bottom:1px solid #cfd4
 <body>
 <div class="contact">
 <h1>MUHAMMAD HEDIA ABD-ELHAMED</h1>
-<strong>JUNIOR BACKEND SOFTWARE ENGINEER | JAVA | SPRING BOOT</strong>
+<strong>COMPUTER SCIENCE GRADUATE | BACKEND / SOFTWARE ENGINEERING</strong>
 <div class="muted">m7mdhedia3bd@gmail.com | +20 11 2892 9474 | <a href="https://www.linkedin.com/in/muhammad-bakr-21582b3ab/">LinkedIn: Muhammad Bakr</a> | <a href="https://github.com/Mr-Wolv">GitHub: Mr-Wolv</a> | <a href="https://mr-wolv.github.io/Mr-Wolv/">Portfolio</a></div>
 </div>
 
-<p>Computer Science graduate from Cairo University with hands-on experience building backend and full-stack software systems using Java, Spring Boot, REST APIs, PostgreSQL, React/TypeScript, Docker, and CI/CD. Experienced in API development, authentication and authorization, database design, validation, automated testing, and practical system architecture. Strong foundation in algorithms, problem solving, databases, distributed systems, and cloud infrastructure through hands-on projects, with transferable C# problem-solving experience.</p>
+<p>Computer Science graduate from Cairo University focused on backend and software engineering. Hands-on project experience building Java/Spring Boot services, PostgreSQL-backed systems, distributed event-driven services, performance experiments, Dockerized environments, CI/CD workflows, and AWS-oriented serverless integrations validated locally with LocalStack. Seeking junior/entry-level backend or software engineering opportunities.</p>
 
 <h2>EDUCATION</h2>
 <p><strong>Cairo University - Faculty of Science</strong> | B.Sc. in Computer Science - Graduated January 2026 | GPA: 3.289/5 | Very Good with Honors</p>
-<ul><li>Ranked <strong>#1 nationally in Computer Science across Faculties of Science</strong></li><li>Ranked <strong>#2 in Mathematics, Cairo University</strong>; <strong>#7 nationally in Mathematics across Faculties of Science</strong></li></ul>
+<p>Academic distinctions: #1 nationally in Computer Science across Faculties of Science; #2 in Mathematics at Cairo University; #7 nationally in Mathematics across Faculties of Science.</p>
 
 <h2>TECHNICAL SKILLS</h2>
 <div class="skills">
-<strong>Programming</strong><span>Java, Python, C++, C#</span>
+<strong>Programming</strong><span>Java, Python, C++, C#, JavaScript, SQL</span>
 <strong>Backend</strong><span>Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs</span>
-<strong>Data</strong><span>PostgreSQL, Oracle SQL/PLSQL, MongoDB, SQL</span>
-<strong>Systems</strong><span>Microservices, Apache Kafka, Event-Driven Architecture, Kubernetes, distributed systems fundamentals</span>
-<strong>Cloud & Infrastructure</strong><span>AWS (SQS, Lambda, DynamoDB, S3, IAM), Terraform, LocalStack, Docker, GitHub Actions, CI/CD</span>
-<strong>Testing & API</strong><span>JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, automated testing</span>
+<strong>Data</strong><span>PostgreSQL, Oracle SQL/PLSQL, MongoDB</span>
+<strong>Systems & Cloud</strong><span>Apache Kafka, Event-Driven Architecture, Kubernetes, AWS (SQS, Lambda, DynamoDB, S3, IAM - LocalStack validation), Terraform</span>
+<strong>Testing & Delivery</strong><span>JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, GitHub Actions, CI/CD, Maven, Flyway</span>
 <strong>Frontend</strong><span>React, TypeScript, Vite</span>
-<strong>Additional</strong><span>JavaScript, Node.js, Express.js, Mongoose, Maven, Flyway, JavaFX, cryptography, information theory</span>
 </div>
 
 <h2>SELECTED PROJECTS</h2>
-<div class="project"><h3>MerHouse - B2B Fulfillment Coordination Platform</h3><div class="muted">Java 21 | Spring Boot | Spring Security | Spring Data JPA | PostgreSQL | React/TypeScript | Docker | GitHub Actions</div><ul><li>Built a role-aware B2B fulfillment coordination platform connecting merchants and warehouse providers across inventory, inbound stock, order allocation, fulfillment, exceptions, and service-accountability workflows.</li><li>Developed REST APIs with validation, authentication/authorization, tenant-aware data access, and PostgreSQL persistence; added Flyway migrations, JUnit/Mockito/Testcontainers coverage, OpenAPI documentation, Docker Compose, and GitHub Actions quality gates.</li><li>Delivered web and Android-facing system surfaces through a shared frontend implementation.</li></ul></div>
+<div class="project"><h3>MerHouse - B2B Fulfillment Coordination Platform</h3><div class="muted">Java 21 | Spring Boot | Spring Security | Spring Data JPA | PostgreSQL | React/TypeScript | Docker | GitHub Actions</div><ul><li>Built a role-aware B2B fulfillment platform connecting merchants and warehouse providers across inventory, inbound stock, order allocation, fulfillment, exceptions, and service-accountability workflows.</li><li>Implemented REST APIs, validation, authentication/authorization, tenant-aware data access, Flyway migrations, automated tests, Docker Compose, OpenAPI documentation, and CI quality gates; delivered web and Android-facing surfaces.</li></ul></div>
 
-<div class="project"><h3>EventFlow - Distributed Event-Driven Backend</h3><div class="muted">Java 25 | Spring Boot 3.5 | Apache Kafka | Kubernetes | AWS SQS/Lambda/DynamoDB/S3 | Terraform | LocalStack | GitHub Actions</div><ul><li>Designed two independently deployable Spring Boot services communicating asynchronously through Kafka events, using idempotency, at-least-once processing, exponential-backoff retries, and dead-letter handling.</li><li>Deployed the primary path with Strimzi-managed Kafka on Kubernetes and verified in-cluster communication, scaling, pod replacement, consumer-group rebalance, and continued processing after consumer failure.</li><li>Built an AWS serverless variant using SQS, Lambda (Java 21), DynamoDB, S3, IAM, and Terraform; integration-tested locally with LocalStack under enforced IAM, including duplicate delivery and durable conditional-write idempotency. No production AWS deployment is claimed.</li><li>Built CI that runs Maven verification and Docker builds, then executes both a kind-based in-cluster smoke test and a LocalStack AWS-path integration test when the workspace token is available.</li></ul></div>
+<div class="project"><h3>EventFlow - Distributed Event-Driven Backend</h3><div class="muted">Java 25 | Spring Boot 3.5 | Apache Kafka | Kubernetes | AWS | Terraform | LocalStack | GitHub Actions</div><ul><li>Built two independently deployable Spring Boot services communicating through Kafka with at-least-once processing, event-ID idempotency, retries, and dead-letter handling; deployed the primary path with Strimzi-managed Kafka on Kubernetes and verified in-cluster smoke tests.</li><li>Built an AWS serverless variant using SQS, Lambda (Java 21), DynamoDB, S3, IAM, and Terraform; integration-tested locally with LocalStack under enforced IAM, including duplicate-delivery and durable conditional-write idempotency. No production AWS deployment is claimed.</li></ul></div>
 
-<div class="project"><h3>Wordle Strat-Console - Algorithmic Game Solver</h3><div class="muted">Python | Algorithms | Information Theory | HTTP/JSON | WebView2</div><ul><li>Developed a deterministic solver that evaluates remaining answer spaces and ranks candidate guesses using information gain and win probability.</li><li>Implemented a feedback-driven solving loop and validated the algorithm through exhaustive closed-loop replay; delivered the same core across web, CLI, and desktop environments.</li></ul></div>
+<div class="project"><h3>QueryForge - PostgreSQL Performance Engineering Service</h3><div class="muted">Java 25 | Spring Boot 3.5.5 | PostgreSQL 17 | Docker | k6</div><ul><li>Built a reproducible performance-testing environment using deterministic seed-controlled datasets up to 1M records and controlled workloads from 10 req/s to 200 concurrent users.</li><li>Diagnosed filtered-search bottlenecks with EXPLAIN (ANALYZE, BUFFERS), then validated a workload-shaped composite index; reduced p95 latency from 8.18 s to 130 ms (~63x) at 10 req/s and identified the 10-connection pool as the next measured bottleneck.</li><li>Benchmarked OFFSET vs keyset pagination and filter-first vs order-first index layouts, documenting execution plans, tradeoffs, and reproducible evidence.</li></ul></div>
 
-<div class="project"><h3>LeetCode / Problem Solving Repository</h3><div class="muted">Java | Python | JavaScript | SQL | C# | Data Structures & Algorithms</div><ul><li>Maintained a problem-solving repository spanning Java, Python, JavaScript, SQL, and C# exercises covering algorithms, data structures, SQL practice, and structured programming challenges.</li></ul></div>
+<div class="project"><h3>LeetCode / Problem Solving</h3><div class="muted">Java | Python | C++ | C# | JavaScript | SQL | Data Structures & Algorithms</div><ul><li>Maintains a multi-language problem-solving repository covering algorithms, data structures, SQL practice, and structured programming challenges.</li></ul></div>
 
 <h2>PROFESSIONAL DEVELOPMENT</h2>
-<p><strong>Independent Software Development - 2026</strong> | Continued hands-on software development and professional development after graduation, focusing on backend engineering, distributed systems, cloud-oriented integration, algorithms, validation, software architecture, and practical system design while pursuing a first professional engineering role.</p>
+<p><strong>Independent Software Development - 2026</strong> | Continued hands-on development after graduation with emphasis on backend engineering, databases, distributed systems, performance, validation, and practical software design.</p>
 <p><strong>Languages:</strong> Arabic - Native | English - C1-level proficiency</p>
-<p><strong>Target roles:</strong> Junior Backend Software Engineer | Junior Software Engineer | Java / Spring Boot Developer</p>
+<p><strong>Target:</strong> Junior Backend Software Engineer | Junior Software Engineer | Java / Spring Boot Developer</p>
 </body></html>
