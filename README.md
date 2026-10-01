@@ -1,12 +1,13 @@
 # Muhammad Bakr - Junior Backend Software Engineer
 
-Computer Science graduate from Cairo University focused on backend development, software engineering, algorithms, and distributed systems.
+Computer Science graduate from Cairo University focused on backend development, software engineering, algorithms, distributed systems, and cloud-oriented engineering.
 
 ## Core stack
 
 - **Backend:** Java, Spring Boot, Spring Security, Spring Data JPA, REST APIs
 - **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB, SQL
 - **Distributed systems:** Microservices, Apache Kafka, Event-Driven Architecture, Kubernetes
+- **Cloud & infrastructure:** AWS (SQS, Lambda, DynamoDB, S3, IAM), Terraform, LocalStack
 - **Engineering:** Docker, GitHub Actions, CI/CD, Maven, Flyway, JUnit, Mockito, Testcontainers
 - **Frontend:** React, TypeScript, Vite
 - **Languages & problem solving:** Java, Python, C++, C#, JavaScript, algorithms, information theory
@@ -19,9 +20,11 @@ B2B fulfillment coordination platform demonstrating backend application engineer
 **Stack:** Java 21, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, React/TypeScript, Docker, GitHub Actions
 
 ### EventFlow
-Distributed event-driven backend demonstrating microservices, Kafka, at-least-once processing, idempotency, retry and dead-letter handling, Kubernetes, Strimzi, and in-cluster CI verification.
+Distributed event-driven backend with two independently deployable Spring Boot services, Kafka-based asynchronous processing, at-least-once delivery, idempotency, retry and dead-letter handling, and Kubernetes deployment through Strimzi.
 
-**Stack:** Java 21, Spring Boot, Apache Kafka, Kubernetes, Docker, GitHub Actions
+It also includes an AWS serverless variant using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. The AWS path is integration-tested locally with LocalStack, including enforced IAM, duplicate-delivery validation, durable idempotency, and automated CI verification. No production AWS deployment is claimed.
+
+**Stack:** Java 25, Spring Boot 3.5, Apache Kafka, Kubernetes, AWS SQS/Lambda/DynamoDB/S3, Terraform, LocalStack, Docker, GitHub Actions
 
 ### Wordle Strat-Console
 Deterministic algorithmic solver using information gain, probability-aware scoring, and a feedback-driven evaluation loop.
