@@ -14,26 +14,26 @@ Computer Science graduate from Cairo University focused on backend development, 
 
 ## Selected work
 
-### MerHouse
+### [MerHouse](https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026)
 B2B fulfillment coordination platform demonstrating backend application engineering, security, persistence, migrations, automated testing, Docker, CI/CD, and multi-surface delivery.
 
 **Stack:** Java 21, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, React/TypeScript, Docker, GitHub Actions
 
-### EventFlow
+### [EventFlow](https://github.com/Mr-Wolv/EventFlow_Bakr101_2026)
 Distributed event-driven backend with two independently deployable Spring Boot services, Kafka-based asynchronous processing, at-least-once delivery, idempotency, retry and dead-letter handling, and Kubernetes deployment through Strimzi.
 
 It also includes an AWS serverless variant using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. The AWS path is integration-tested locally with LocalStack, including enforced IAM, duplicate-delivery validation, durable idempotency, and automated CI verification. No production AWS deployment is claimed.
 
 **Stack:** Java 25, Spring Boot 3.5, Apache Kafka, Kubernetes, AWS SQS/Lambda/DynamoDB/S3, Terraform, LocalStack, Docker, GitHub Actions
 
-### QueryForge
+### [QueryForge](https://github.com/Mr-Wolv/QueryForge_Bakr101_2026)
 PostgreSQL performance-engineering service built to run controlled, reproducible experiments against a 1M-row catalog.
 
 Measured dataset scaling, query-plan behavior, workload-shaped indexing, OFFSET vs keyset pagination, index-ordering alternatives, and concurrency saturation using k6 and `EXPLAIN (ANALYZE, BUFFERS)`.
 
 **Stack:** Java 25, Spring Boot, PostgreSQL 17, Docker, k6
 
-### LeetCode / Problem Solving
+### [LeetCode / Problem Solving](https://github.com/Mr-Wolv/LeetCode_Bakr101_2024)
 Long-running practice repository covering algorithms, data structures, SQL, and structured problem solving across Java, Python, JavaScript, and C#.
 
 ## Additional work
