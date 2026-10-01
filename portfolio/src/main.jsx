@@ -29,8 +29,7 @@ const skills = [
   ['Testing & Delivery', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · GitHub Actions · CI/CD · Maven · Flyway'],
   ['Frontend', 'React · TypeScript · Vite'],
   ['Languages & Problem Solving', 'Java · Python · C++ · C# · JavaScript · algorithms'],
-  ['Additional', 'Node.js · Express.js · Mongoose · JavaFX · cryptography']
-];
+  ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 function SectionLabel({ children }) { return <p className="eyebrow">{children}</p>; }
@@ -81,13 +80,13 @@ function App() {
         </section>
 
         <section id="work" className="section container">
-          <SectionLabel>01 · Selected work</SectionLabel>
+          <SectionLabel>01 · Projects</SectionLabel>
           <div className="section-head"><h2>Projects with engineering behind them.</h2><p>I prefer projects where the interesting part is not just the framework, but the decisions around the system.</p></div>
 
           <article className="project-feature">
             <div className="project-number">01</div>
             <div className="project-body">
-              <div className="project-title-row"><div><p className="project-kicker">FLAGSHIP PROJECT</p><h3><a className="project-title-link" href={profile.merhouse} target="_blank" rel="noreferrer">MerHouse</a></h3></div><span className="pill">B2B fulfillment</span></div>
+              <div className="project-title-row"><div><p className="project-kicker">FLAGSHIP PROJECT</p><h3>MerHouse</h3></div><span className="pill">B2B fulfillment</span></div>
               <p className="project-description">A role-aware fulfillment coordination system connecting merchants and warehouse providers across inventory, inbound stock, orders, allocation, fulfillment, exceptions, shipments, and service accountability.</p>
               <div className="tag-row"><span>Java 21</span><span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span><span>React</span><span>TypeScript</span><span>Docker</span><span>GitHub Actions</span></div>
               <div className="project-links"><a href={profile.merhouseLive} target="_blank" rel="noreferrer">Live app <Arrow /></a><a href={profile.merhouse} target="_blank" rel="noreferrer">Source & documentation <Arrow /></a><a href={profile.merhouseApi} target="_blank" rel="noreferrer">Backend <Arrow /></a></div>
@@ -98,7 +97,7 @@ function App() {
           <article className="project-feature project-feature-secondary">
             <div className="project-number">02</div>
             <div className="project-body">
-              <div className="project-title-row"><div><p className="project-kicker">DISTRIBUTED SYSTEMS PROJECT</p><h3><a className="project-title-link" href={profile.eventflow} target="_blank" rel="noreferrer">EventFlow</a></h3></div><span className="pill">Kafka + AWS paths</span></div>
+              <div className="project-title-row"><div><p className="project-kicker">DISTRIBUTED SYSTEMS PROJECT</p><h3>EventFlow</h3></div><span className="pill">Kafka + AWS paths</span></div>
               <p className="project-description">A focused distributed backend demonstrating asynchronous service communication, failure handling, idempotent processing, and two deployment models: Kafka + Kubernetes for the primary path and an AWS serverless path using SQS, Lambda, DynamoDB, S3, IAM, and Terraform.</p>
               <div className="tag-row"><span>Java 25</span><span>Spring Boot 3.5</span><span>Kafka</span><span>Kubernetes</span><span>AWS</span><span>SQS</span><span>Lambda</span><span>DynamoDB</span><span>S3</span><span>Terraform</span><span>LocalStack</span><span>GitHub Actions</span></div>
               <div className="project-links"><a href={profile.eventflow} target="_blank" rel="noreferrer">Source & documentation <Arrow /></a></div>
@@ -110,7 +109,7 @@ function App() {
           <article className="project-feature project-feature-secondary">
             <div className="project-number">03</div>
             <div className="project-body">
-              <div className="project-title-row"><div><p className="project-kicker">DATABASE & PERFORMANCE ENGINEERING</p><h3><a className="project-title-link" href={profile.queryforge} target="_blank" rel="noreferrer">QueryForge</a></h3></div><span className="pill">PostgreSQL performance</span></div>
+              <div className="project-title-row"><div><p className="project-kicker">DATABASE & PERFORMANCE ENGINEERING</p><h3>QueryForge</h3></div><span className="pill">PostgreSQL performance</span></div>
               <p className="project-description">A focused Spring Boot service used to investigate database performance through controlled, reproducible experiments across dataset scale, query plans, indexing, pagination, and concurrency.</p>
               <div className="tag-row"><span>Java 25</span><span>Spring Boot 3.5.5</span><span>PostgreSQL 17</span><span>Docker</span><span>k6</span><span>EXPLAIN ANALYZE</span><span>Testcontainers</span><span>GitHub Actions</span></div>
               <div className="project-links"><a href={profile.queryforge} target="_blank" rel="noreferrer">Source, benchmarks & evidence <Arrow /></a></div>
@@ -120,12 +119,12 @@ function App() {
           </article>
 
           <div className="work-grid">
-            <article className="work-card"><span className="card-index">04</span><h3><a className="project-title-link" href={profile.leetcode} target="_blank" rel="noreferrer">LeetCode / Problem Solving</a></h3><p>A long-running practice repository spanning Java, Python, JavaScript, SQL, and C# problem solving.</p><a href={profile.leetcode} target="_blank" rel="noreferrer">Read the problem-solving repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">04</span><h3>LeetCode / Problem Solving</h3><p>A long-running practice repository spanning Java, Python, JavaScript, SQL, and C# problem solving.</p><a href={profile.leetcode} target="_blank" rel="noreferrer">Read the problem-solving repo <Arrow /></a></article>
           </div>
 
-          <div className="section-head work-subhead"><h2>More work.</h2><p>Additional projects remain public for deeper technical review.</p></div>
+          <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>
           <div className="work-grid">
-            <article className="work-card"><span className="card-index">05</span><h3>Wordle Strat-Console</h3><p>A deterministic game solver retained as an additional algorithms project, with web, CLI, and desktop delivery paths.</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">05</span><h3>Wordle Strat-Console</h3><p>A deterministic game solver retained as an algorithms project, with web, CLI, and desktop delivery paths.</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
             <article className="work-card"><span className="card-index">06</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
             <article className="work-card"><span className="card-index">07</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
           </div>
