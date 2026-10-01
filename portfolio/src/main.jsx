@@ -24,6 +24,7 @@ const skills = [
   ['Backend', 'Java · Spring Boot · Spring Security · Spring Data JPA · Hibernate · REST APIs'],
   ['Data', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB · SQL'],
   ['Systems', 'Microservices · Apache Kafka · Event-Driven Architecture · Kubernetes · distributed systems fundamentals'],
+  ['Cloud & Infrastructure', 'AWS (SQS · Lambda · DynamoDB · S3 · IAM) · Terraform · LocalStack'],
   ['Testing & Delivery', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · GitHub Actions · CI/CD · Maven · Flyway'],
   ['Frontend', 'React · TypeScript · Vite'],
   ['Languages & Problem Solving', 'Java · Python · C++ · C# · JavaScript · algorithms · information theory'],
@@ -52,7 +53,7 @@ function App() {
           <div className="hero-copy">
             <div className="status"><i /> Available for software engineering opportunities</div>
             <h1>Backend-focused engineer who likes to <em>understand the system</em> before building it.</h1>
-            <p className="hero-lede">Computer Science graduate from Cairo University, focused on backend development, software engineering, algorithms, and distributed systems.</p>
+            <p className="hero-lede">Computer Science graduate from Cairo University, focused on backend development, software engineering, algorithms, distributed systems, and practical cloud engineering.</p>
             <div className="hero-actions">
               <a className="button primary" href="#work">Explore my work <Arrow /></a>
               <a className="button ghost" href={resumeUrl}>View CV <Arrow /></a>
@@ -96,12 +97,13 @@ function App() {
           <article className="project-feature project-feature-secondary">
             <div className="project-number">02</div>
             <div className="project-body">
-              <div className="project-title-row"><div><p className="project-kicker">DISTRIBUTED SYSTEMS PROJECT</p><h3>EventFlow</h3></div><span className="pill">Event-driven backend</span></div>
-              <p className="project-description">A focused distributed backend demonstrating asynchronous service communication, failure handling, idempotent processing, and Kubernetes deployment.</p>
-              <div className="tag-row"><span>Java 21</span><span>Spring Boot</span><span>Kafka</span><span>Kubernetes</span><span>Strimzi</span><span>Docker</span><span>GitHub Actions</span></div>
+              <div className="project-title-row"><div><p className="project-kicker">DISTRIBUTED SYSTEMS PROJECT</p><h3>EventFlow</h3></div><span className="pill">Kafka + AWS paths</span></div>
+              <p className="project-description">A focused distributed backend demonstrating asynchronous service communication, failure handling, idempotent processing, and two deployment models: Kafka + Kubernetes for the primary path and an AWS serverless path using SQS, Lambda, DynamoDB, S3, IAM, and Terraform.</p>
+              <div className="tag-row"><span>Java 25</span><span>Spring Boot 3.5</span><span>Kafka</span><span>Kubernetes</span><span>AWS</span><span>SQS</span><span>Lambda</span><span>DynamoDB</span><span>S3</span><span>Terraform</span><span>LocalStack</span><span>GitHub Actions</span></div>
               <div className="project-links"><a href={profile.eventflow} target="_blank" rel="noreferrer">Source & documentation <Arrow /></a></div>
+              <p className="muted">AWS path validated locally with LocalStack and enforced IAM; duplicate delivery and durable idempotency are covered by integration validation and CI. No production AWS deployment is claimed.</p>
             </div>
-            <div className="project-side"><div className="architecture"><span>Orders Service</span><b>↓</b><span>Kafka</span><b>↓</b><span>Fulfillment Service</span><b>↓</b><span>Kubernetes</span></div><small>Idempotency · retries · dead-letter handling · in-cluster smoke tests</small></div>
+            <div className="project-side"><div className="architecture"><span>Kafka path</span><b>↓</b><span>Spring services</span><b>↓</b><span>Kubernetes</span><b>↔</b><span>AWS path: SQS → Lambda → DynamoDB + S3</span></div><small>At-least-once processing · retries · dead letters · in-cluster and LocalStack CI verification</small></div>
           </article>
 
           <div className="work-grid">
@@ -120,7 +122,8 @@ function App() {
           <div className="container about-grid">
             <div><SectionLabel>02 · About</SectionLabel><h2>Grounded in fundamentals. Comfortable crossing stacks.</h2></div>
             <div className="about-copy">
-              <p>I am a Computer Science graduate who is most interested in backend and general software engineering. Java and Spring Boot are my strongest backend tools, while my project work has also taken me through databases, algorithms, frontend systems, Docker, CI, distributed systems, cryptography, and problem solving in multiple languages.</p>
+              <p>I am a Computer Science graduate who is most interested in backend and general software engineering. Java and Spring Boot are my strongest backend tools, while my project work has also taken me through databases, algorithms, frontend systems, Docker, CI, distributed systems, cloud infrastructure, cryptography, and problem solving in multiple languages.</p>
+              <p>I also built a serverless AWS variant of EventFlow using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. It was integration-tested locally with LocalStack under enforced IAM and automated in CI; I do not present it as a production AWS deployment.</p>
               <p>I also have C# problem-solving experience, which complements my Java background and makes moving between the two ecosystems a familiar transition at the language level. I do not present C#/.NET as my primary production stack.</p>
               <p>Since graduation, I have continued through independent software development and professional development while looking for my first professional engineering role.</p>
               <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Graduated January 2026 · GPA 3.289 / 5 · Very Good with Honors</span></div>
