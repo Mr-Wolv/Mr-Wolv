@@ -12,7 +12,7 @@ Computer Science graduate from Cairo University focused on backend development, 
 - **Frontend:** React, TypeScript, Vite
 - **Languages & problem solving:** Java, Python, C++, C#, JavaScript, algorithms
 
-## Selected work
+## Projects
 
 ### [MerHouse](https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026)
 B2B fulfillment coordination platform demonstrating backend application engineering, security, persistence, migrations, automated testing, Docker, CI/CD, and multi-surface delivery.
@@ -36,7 +36,7 @@ Measured dataset scaling, query-plan behavior, workload-shaped indexing, OFFSET 
 ### [LeetCode / Problem Solving](https://github.com/Mr-Wolv/LeetCode_Bakr101_2024)
 Long-running practice repository covering algorithms, data structures, SQL, and structured problem solving across Java, Python, JavaScript, and C#.
 
-## Additional work
+## More work
 
 Wordle Strat-Console, Chess Studio, and Engineering Tooling remain public on GitHub for deeper technical review.
 
