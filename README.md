@@ -1,6 +1,6 @@
-# Muhammad Bakr - Junior Backend Software Engineer
+# Muhammad Bakr - Computer Science Graduate | Backend / Software Engineering
 
-Computer Science graduate from Cairo University focused on backend development, software engineering, algorithms, distributed systems, and cloud-oriented engineering.
+Computer Science graduate from Cairo University focused on backend development, software engineering, distributed systems, databases, and practical cloud engineering.
 
 ## Core stack
 
@@ -10,12 +10,12 @@ Computer Science graduate from Cairo University focused on backend development, 
 - **Cloud & infrastructure:** AWS (SQS, Lambda, DynamoDB, S3, IAM), Terraform, LocalStack
 - **Engineering:** Docker, GitHub Actions, CI/CD, Maven, Flyway, JUnit, Mockito, Testcontainers
 - **Frontend:** React, TypeScript, Vite
-- **Languages & problem solving:** Java, Python, C++, C#, JavaScript, algorithms, information theory
+- **Languages & problem solving:** Java, Python, C++, C#, JavaScript, algorithms
 
 ## Selected work
 
 ### MerHouse
-B2B fulfillment coordination platform demonstrating backend application engineering, security, persistence, migrations, testing, Docker, CI/CD, and multi-surface delivery.
+B2B fulfillment coordination platform demonstrating backend application engineering, security, persistence, migrations, automated testing, Docker, CI/CD, and multi-surface delivery.
 
 **Stack:** Java 21, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, React/TypeScript, Docker, GitHub Actions
 
@@ -26,13 +26,19 @@ It also includes an AWS serverless variant using SQS, Lambda, DynamoDB, S3, IAM,
 
 **Stack:** Java 25, Spring Boot 3.5, Apache Kafka, Kubernetes, AWS SQS/Lambda/DynamoDB/S3, Terraform, LocalStack, Docker, GitHub Actions
 
-### Wordle Strat-Console
-Deterministic algorithmic solver using information gain, probability-aware scoring, and a feedback-driven evaluation loop.
+### QueryForge
+PostgreSQL performance-engineering service built to run controlled, reproducible experiments against a 1M-row catalog.
 
-**Stack:** Python, algorithms, information theory, HTTP/JSON, WebView2
+Measured dataset scaling, query-plan behavior, workload-shaped indexing, OFFSET vs keyset pagination, index-ordering alternatives, and concurrency saturation using k6 and `EXPLAIN (ANALYZE, BUFFERS)`.
+
+**Stack:** Java 25, Spring Boot, PostgreSQL 17, Docker, k6
 
 ### LeetCode / Problem Solving
 Long-running practice repository covering algorithms, data structures, SQL, and structured problem solving across Java, Python, JavaScript, and C#.
+
+## Additional work
+
+Wordle Strat-Console, Chess Studio, and Engineering Tooling remain public on GitHub for deeper technical review.
 
 ## How I work
 
