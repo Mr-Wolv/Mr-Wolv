@@ -4,23 +4,21 @@ A dark, engineering-focused personal portfolio built with React + Vite and deplo
 
 ## Current positioning
 
-- Junior Backend Software Engineer
+- Computer Science graduate focused on backend / software engineering
 - Core backend stack: Java, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL
 - Distributed systems: Apache Kafka, Event-Driven Architecture, Kubernetes
 - Cloud & infrastructure: AWS (SQS, Lambda, DynamoDB, S3, IAM), Terraform, LocalStack
-- Engineering: Docker, GitHub Actions, CI/CD, automated testing
+- Engineering: Docker, GitHub Actions, CI/CD, automated testing, performance benchmarking
 - Supporting languages and tools: Python, C++, C#, JavaScript, React, TypeScript, SQL
 
 ## Selected work
 
 - **MerHouse** - B2B fulfillment coordination platform
 - **EventFlow** - distributed event-driven backend with Kafka + Kubernetes primary deployment and an AWS serverless variant
-- **Wordle Strat-Console** - deterministic algorithmic solver
+- **QueryForge** - PostgreSQL performance engineering and controlled benchmarking
 - **LeetCode / Problem Solving** - multi-language algorithms and SQL practice
 
-EventFlow's AWS path is locally validated with LocalStack and Terraform across SQS, Lambda, DynamoDB, S3, and IAM, including duplicate-delivery and durable-idempotency checks. The repository does not claim production AWS deployment.
-
-Additional work remains available on GitHub, including Chess Studio and Engineering Tooling.
+Wordle Strat-Console, Chess Studio, and Engineering Tooling remain available in the site's additional work section and on GitHub.
 
 ## Run locally
 
