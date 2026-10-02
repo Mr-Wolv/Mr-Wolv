@@ -21,14 +21,13 @@ const profile = {
 const resumeUrl = `${profile.baseUrl}cv.html`;
 
 const skills = [
-  ['Backend', 'Java · Spring Boot · Spring Security · Spring Data JPA · Hibernate · REST APIs'],
-  ['Data', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB · SQL'],
-  ['Systems', 'Microservices · Apache Kafka · Event-Driven Architecture · Kubernetes · distributed systems fundamentals'],
-  ['Cloud & Infrastructure', 'AWS (SQS · Lambda · DynamoDB · S3 · IAM) · Terraform · LocalStack'],
-  ['Testing & Delivery', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · GitHub Actions · CI/CD · Maven · Flyway'],
-  ['Frontend', 'React · TypeScript · Vite'],
-  ['Programming', 'Java · Python · C++ · C# · JavaScript · SQL'],
-  ];
+  ['Programming:', 'Java · Python · C++ · C# · JavaScript · SQL'],
+  ['Backend:', 'Spring Boot · Spring Security · Spring Data JPA · Hibernate · REST APIs'],
+  ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB'],
+  ['Systems & Cloud:', 'Apache Kafka · Event-Driven Architecture · Kubernetes · AWS services (SQS · Lambda · DynamoDB · S3 · IAM; locally validated with LocalStack) · Terraform'],
+  ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · GitHub Actions · CI/CD · Maven · Flyway'],
+  ['Frontend:', 'React · TypeScript · Vite'],
+];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 function SectionLabel({ children }) { return <p className="eyebrow">{children}</p>; }
@@ -52,7 +51,7 @@ function App() {
           <div className="hero-copy">
             <div className="status"><i /> Available for software engineering opportunities</div>
             <h1>Backend-focused engineer who likes to <em>understand the system</em> before building it.</h1>
-            <p className="hero-lede">Backend developer focused on Java/Spring Boot, databases, distributed systems, and practical cloud engineering.</p>
+            <p className="hero-lede">Junior backend developer focused on Java/Spring Boot, databases, distributed systems, and practical cloud engineering.</p>
             <div className="hero-actions">
               <a className="button primary" href="#work">Explore my work <Arrow /></a>
               <a className="button ghost" href={resumeUrl}>View CV <Arrow /></a>

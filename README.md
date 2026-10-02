@@ -1,16 +1,15 @@
-# Muhammad Bakr - Backend Developer
+# Muhammad Bakr - Junior Backend Developer
 
-Backend developer focused on Java/Spring Boot, PostgreSQL, distributed systems, and practical cloud engineering.
+Recent Computer Science graduate focused on backend engineering with Java/Spring Boot, PostgreSQL, distributed systems, and practical cloud engineering.
 
 ## Core stack
 
-- **Backend:** Java, Spring Boot, Spring Security, Spring Data JPA, REST APIs
-- **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB, SQL
-- **Distributed systems:** Microservices, Apache Kafka, Event-Driven Architecture, Kubernetes
-- **Cloud & infrastructure:** AWS (SQS, Lambda, DynamoDB, S3, IAM), Terraform, LocalStack
-- **Engineering:** Docker, GitHub Actions, CI/CD, Maven, Flyway, JUnit, Mockito, Testcontainers
-- **Frontend:** React, TypeScript, Vite
 - **Programming:** Java, Python, C++, C#, JavaScript, SQL
+- **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs
+- **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB
+- **Systems & Cloud:** Apache Kafka, Event-Driven Architecture, Kubernetes, AWS services (SQS, Lambda, DynamoDB, S3, IAM; locally validated with LocalStack), Terraform
+- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, GitHub Actions, CI/CD, Maven, Flyway
+- **Frontend:** React, TypeScript, Vite
 
 ## Projects
 
