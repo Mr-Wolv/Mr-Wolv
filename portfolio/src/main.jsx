@@ -144,9 +144,9 @@ function App() {
         <section className="section container achievements">
           <SectionLabel>04 · Academic achievement</SectionLabel>
           <div className="achievement-grid">
-            <div><strong>#1</strong><span>Among 2026 graduates: ranked #1 nationally in Computer Science across Faculties of Science</span></div>
-            <div><strong>#2</strong><span>Among 2026 graduates: ranked #2 in Mathematics at Cairo University</span></div>
-            <div><strong>#7</strong><span>Among 2026 graduates: ranked #7 nationally in Mathematics across Faculties of Science</span></div>
+            <div><strong>#1</strong><span>Nationally in Computer Science across Faculties of Science · 2026 graduate cohort</span></div>
+            <div><strong>#2</strong><span>Mathematics at Cairo University · 2026 graduate cohort</span></div>
+            <div><strong>#7</strong><span>Nationally in Mathematics across Faculties of Science · 2026 graduate cohort</span></div>
           </div>
         </section>
 
