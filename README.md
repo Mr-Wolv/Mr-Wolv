@@ -5,7 +5,7 @@ Recent Computer Science graduate focused on backend engineering with Java/Spring
 ## Core stack
 
 - **Programming:** Java, Python, C++, C#, JavaScript, SQL
-- **Additional skills:** Linux, AI-assisted software development (agentic workflows), LeetCode problem solving, competitive programming.
+- **Additional skills:** Linux, Algorithms, AI-assisted software development (agentic workflows).
 - **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs
 - **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB
 - **Systems & Cloud:** Apache Kafka, Event-Driven Architecture, Kubernetes, AWS services (SQS, Lambda, DynamoDB, S3, IAM; locally validated with LocalStack), Terraform
