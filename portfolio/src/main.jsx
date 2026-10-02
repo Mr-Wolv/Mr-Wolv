@@ -12,7 +12,6 @@ const profile = {
   merhouseApi: 'https://m7mdhbkr-merhouse-backend.hf.space',
   eventflow: 'https://github.com/Mr-Wolv/EventFlow_Bakr101_2026',
   queryforge: 'https://github.com/Mr-Wolv/QueryForge_Bakr101_2026',
-  wordle: 'https://github.com/Mr-Wolv/Wordle_Solver',
   chess: 'https://github.com/Mr-Wolv/Chess_Studio',
   skillsRepo: 'https://github.com/Mr-Wolv/Skill_Playground_Bakr101_2026',
   baseUrl: import.meta.env.BASE_URL
@@ -26,7 +25,7 @@ const skills = [
   ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB'],
   ['Systems & Cloud:', 'Apache Kafka · Event-Driven Architecture · Kubernetes · AWS services (SQS · Lambda · DynamoDB · S3 · IAM; locally validated with LocalStack) · Terraform'],
   ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · GitHub Actions · CI/CD · Maven · Flyway'],
-  ['Algorithms & Problem Solving:', 'Data structures · Divide and conquer · Dynamic programming · Graph/search algorithms · Game-tree search · Information gain'],
+  ['Algorithms & Problem Solving:', 'Data structures · Algorithm design'],
   ['Frontend:', 'React · TypeScript · Vite'],
 ];
 
@@ -119,9 +118,8 @@ function App() {
 
           <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>
           <div className="work-grid">
-            <article className="work-card"><span className="card-index">04</span><h3>Wordle Strat-Console</h3><p>A Python game-tree strategy solver that ranks guesses by information gain and win probability; exhaustively verified across 47,814 games in six modes with zero failures (maximum six guesses).</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
-            <article className="work-card"><span className="card-index">05</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
-            <article className="work-card"><span className="card-index">06</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">04</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">05</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
           </div>
         </section>
 
