@@ -13,7 +13,6 @@ const profile = {
   eventflow: 'https://github.com/Mr-Wolv/EventFlow_Bakr101_2026',
   queryforge: 'https://github.com/Mr-Wolv/QueryForge_Bakr101_2026',
   wordle: 'https://github.com/Mr-Wolv/Wordle_Solver',
-  leetcode: 'https://github.com/Mr-Wolv/LeetCode_Bakr101_2024',
   chess: 'https://github.com/Mr-Wolv/Chess_Studio',
   skillsRepo: 'https://github.com/Mr-Wolv/Skill_Playground_Bakr101_2026',
   baseUrl: import.meta.env.BASE_URL
@@ -28,7 +27,7 @@ const skills = [
   ['Cloud & Infrastructure', 'AWS (SQS · Lambda · DynamoDB · S3 · IAM) · Terraform · LocalStack'],
   ['Testing & Delivery', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · GitHub Actions · CI/CD · Maven · Flyway'],
   ['Frontend', 'React · TypeScript · Vite'],
-  ['Languages & Problem Solving', 'Java · Python · C++ · C# · JavaScript · algorithms'],
+  ['Programming', 'Java · Python · C++ · C# · JavaScript · SQL'],
   ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
@@ -53,7 +52,7 @@ function App() {
           <div className="hero-copy">
             <div className="status"><i /> Available for software engineering opportunities</div>
             <h1>Backend-focused engineer who likes to <em>understand the system</em> before building it.</h1>
-            <p className="hero-lede">Computer Science graduate from Cairo University, focused on backend development, software engineering, databases, distributed systems, and practical cloud engineering.</p>
+            <p className="hero-lede">Backend developer focused on Java/Spring Boot, databases, distributed systems, and practical cloud engineering.</p>
             <div className="hero-actions">
               <a className="button primary" href="#work">Explore my work <Arrow /></a>
               <a className="button ghost" href={resumeUrl}>View CV <Arrow /></a>
@@ -73,7 +72,7 @@ function App() {
 }`}</pre>
             </div>
             <div className="hero-facts">
-              <div><strong>2026</strong><span>CS Graduate</span></div>
+              <div><strong>JAVA</strong><span>Primary backend stack</span></div>
               <div><strong>#1</strong><span>National CS ranking*</span></div>
             </div>
           </aside>
@@ -87,8 +86,8 @@ function App() {
             <div className="project-number">01</div>
             <div className="project-body">
               <div className="project-title-row"><div><p className="project-kicker">FLAGSHIP PROJECT</p><h3>MerHouse</h3></div><span className="pill">B2B fulfillment</span></div>
-              <p className="project-description">A role-aware fulfillment coordination system connecting merchants and warehouse providers across inventory, inbound stock, orders, allocation, fulfillment, exceptions, shipments, and service accountability.</p>
-              <div className="tag-row"><span>Java 21</span><span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span><span>React</span><span>TypeScript</span><span>Docker</span><span>GitHub Actions</span></div>
+              <p className="project-description">Built a role-aware B2B fulfillment platform connecting merchants, warehouse providers, and platform operators across inventory, inbound stock, order creation/import, allocation, fulfillment, exceptions, shipments, notifications, and service accountability. Implemented Spring Boot REST APIs with validation, Spring Security authentication/authorization, tenant-aware access control, PostgreSQL persistence, Flyway migrations, transactional outbox, inventory locking, partial allocation/backorders, shipment state transitions, and OpenAPI. Delivered React/TypeScript web and Capacitor Android surfaces with automated backend/frontend tests, Docker Compose, GitHub Actions CI, browser and native route verification, and documented deployment and quality workflows.</p>
+              <div className="tag-row"><span>Java 21</span><span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span><span>React</span><span>TypeScript</span><span>Capacitor</span><span>Docker</span><span>GitHub Actions</span></div>
               <div className="project-links"><a href={profile.merhouseLive} target="_blank" rel="noreferrer">Live app <Arrow /></a><a href={profile.merhouse} target="_blank" rel="noreferrer">Source & documentation <Arrow /></a><a href={profile.merhouseApi} target="_blank" rel="noreferrer">Backend <Arrow /></a></div>
             </div>
             <div className="project-side"><div className="architecture"><span>React / Vite</span><b>↓</b><span>REST API</span><b>↓</b><span>Spring Boot</span><b>↓</b><span>PostgreSQL</span></div><small>Web + Android shell · automated tests · CI quality gates</small></div>
@@ -118,15 +117,11 @@ function App() {
             <div className="project-side"><div className="architecture"><span>REST API</span><b>↓</b><span>Spring Boot</span><b>↓</b><span>PostgreSQL</span><b>↕</b><span>k6 benchmarks</span></div><small>Dataset scaling · query plans · indexing · keyset pagination · concurrency experiments</small></div>
           </article>
 
-          <div className="work-grid">
-            <article className="work-card"><span className="card-index">04</span><h3>LeetCode / Problem Solving</h3><p>A long-running practice repository spanning Java, Python, JavaScript, SQL, and C# problem solving.</p><a href={profile.leetcode} target="_blank" rel="noreferrer">Read the problem-solving repo <Arrow /></a></article>
-          </div>
-
           <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>
           <div className="work-grid">
-            <article className="work-card"><span className="card-index">05</span><h3>Wordle Strat-Console</h3><p>A deterministic game solver retained as an algorithms project, with web, CLI, and desktop delivery paths.</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
-            <article className="work-card"><span className="card-index">06</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
-            <article className="work-card"><span className="card-index">07</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">04</span><h3>Wordle Strat-Console</h3><p>A deterministic game solver retained as an algorithms project, with web, CLI, and desktop delivery paths.</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">05</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">06</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
           </div>
         </section>
 
@@ -134,10 +129,10 @@ function App() {
           <div className="container about-grid">
             <div><SectionLabel>02 · About</SectionLabel><h2>Grounded in fundamentals. Comfortable crossing stacks.</h2></div>
             <div className="about-copy">
-              <p>I am a Computer Science graduate who is most interested in backend and general software engineering. Java and Spring Boot are my strongest backend tools, while my project work has also taken me through databases, frontend systems, Docker, CI, distributed systems, cloud infrastructure, and problem solving in multiple languages.</p>
+              <p>I am a backend developer most interested in building reliable backend and full-stack systems. Java and Spring Boot are my strongest backend tools, while my project work has also taken me through databases, frontend systems, Docker, CI, distributed systems, cloud infrastructure, and multiple supporting languages.</p>
               <p>I built EventFlow to study distributed event processing and also implemented a serverless AWS variant using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. The AWS path was integration-tested locally with LocalStack under enforced IAM and automated in CI; I do not present it as a production AWS deployment.</p>
               <p>I built QueryForge to study database behavior rather than assume it: deterministic datasets, execution-plan analysis, workload-shaped indexes, pagination strategies, and concurrency experiments are all backed by reproducible measurements.</p>
-              <p>I also have C# problem-solving experience, which complements my Java background. C#/.NET is not presented as my primary production stack.</p>
+              <p>I also work across C# and other supporting languages alongside my Java background. C#/.NET is not presented as my primary production stack.</p>
               <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Graduated January 2026 · GPA 3.289 / 5 · Very Good with Honors</span></div>
             </div>
           </div>
