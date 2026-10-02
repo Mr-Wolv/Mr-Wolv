@@ -127,9 +127,18 @@ function App() {
           </div>
         </section>
 
+        <section className="section container achievements">
+          <SectionLabel>02 · Academic achievement</SectionLabel>
+          <div className="achievement-grid">
+            <div><strong>#1</strong><span>Nationally in Computer Science across Faculties of Science, Egypt · 2026 graduate cohort</span></div>
+            <div><strong>#2</strong><span>Mathematics at Cairo University · 2026 graduate cohort</span></div>
+            <div><strong>#7</strong><span>Nationally in Mathematics across Faculties of Science, Egypt · 2026 graduate cohort</span></div>
+          </div>
+        </section>
+
         <section id="about" className="section section-alt">
           <div className="container about-grid">
-            <div><SectionLabel>02 · About</SectionLabel><h2>Grounded in fundamentals. Comfortable crossing stacks.</h2></div>
+            <div><SectionLabel>03 · About</SectionLabel><h2>Grounded in fundamentals. Comfortable crossing stacks.</h2></div>
             <div className="about-copy">
               <p>I am a backend developer most interested in building reliable backend and full-stack systems. Java and Spring Boot are my strongest backend tools, while my project work has also taken me through databases, frontend systems, Docker, CI, distributed systems, cloud infrastructure, and multiple supporting languages.</p>
               <p>I built EventFlow to study distributed event processing and also implemented a serverless AWS variant using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. The AWS path was integration-tested locally with LocalStack under enforced IAM and automated in CI; I do not present it as a production AWS deployment.</p>
@@ -141,18 +150,11 @@ function App() {
         </section>
 
         <section id="skills" className="section container">
-          <SectionLabel>03 · Toolbox</SectionLabel>
+          <SectionLabel>04 · Toolbox</SectionLabel>
           <div className="skills-grid">{skills.map(([title, items]) => <div className="skill-row" key={title}><span>{title}</span><strong>{items}</strong></div>)}</div>
         </section>
 
-        <section className="section container achievements">
-          <SectionLabel>04 · Academic achievement</SectionLabel>
-          <div className="achievement-grid">
-            <div><strong>#1</strong><span>Nationally in Computer Science across Faculties of Science, Egypt · 2026 graduate cohort</span></div>
-            <div><strong>#2</strong><span>Mathematics at Cairo University · 2026 graduate cohort</span></div>
-            <div><strong>#7</strong><span>Nationally in Mathematics across Faculties of Science, Egypt · 2026 graduate cohort</span></div>
-          </div>
-        </section>
+
 
         <section id="contact" className="contact-section">
           <div className="container contact-inner"><div><SectionLabel>05 · Contact</SectionLabel><h2>Have a problem worth building?</h2><p>Based in El Basatin, Cairo, Egypt. I'm open to junior software engineering opportunities, internships, and serious engineering projects.</p></div><a className="contact-email" href={`mailto:${profile.email}`}>{profile.email} <Arrow /></a></div>
