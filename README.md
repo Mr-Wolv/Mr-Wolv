@@ -1,41 +1,51 @@
 # Muhammad Bakr - Junior Backend Developer
 
-Recent Computer Science graduate focused on backend engineering with Java/Spring Boot, PostgreSQL, distributed systems, and practical cloud engineering.
+Recent Computer Science graduate focused on Java backend engineering with Spring Boot and PostgreSQL. Built role-aware platforms, Kafka-based services, and reproducible database performance experiments. Project work includes Docker, CI/CD, Kubernetes, and AWS integrations validated locally with LocalStack.
 
-## Core stack
+## Skills
 
-- **Programming:** Java, Python, C++, C#, JavaScript, SQL
-- **Additional skills:** Linux, Algorithms, AI-assisted software development (agentic workflows).
-- **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs
-- **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB
-- **Systems & Cloud:** Apache Kafka, Event-Driven Architecture, Kubernetes, AWS services (SQS, Lambda, DynamoDB, S3, IAM; locally validated with LocalStack), Terraform
-- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, GitHub Actions, CI/CD, Maven, Flyway
-- **Frontend:** React, TypeScript, Vite
+- **Domain Skills:** Linux, Algorithms, AI-assisted software development (agentic workflows)
+- **Technical Skills:** **Programming:** Java, Python, C++, C#, JavaScript, SQL; **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs; **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB; **Systems & Cloud:** Apache Kafka, Event-Driven Architecture, Kubernetes, AWS services (SQS, Lambda, DynamoDB, S3, IAM; locally validated with LocalStack), Terraform; **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, GitHub Actions, CI/CD, Maven, Flyway; **Frontend:** React, TypeScript, Vite
 
-## Problem Solving
+## Education
 
-[LeetCode](https://leetcode.com/u/Mr_Wolv/) and [Repo](https://github.com/Mr-Wolv/LeetCode_Bakr101_2024)
+**Cairo University — Faculty of Science**  
+B.Sc. in Computer Science · Started October 2021 · Graduated January 2026  
+GPA: 3.289/5 · Very Good with Honors
 
 ## Projects
 
-### [MerHouse](https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026)
-Built a role-aware B2B fulfillment platform for merchants, warehouse providers, and platform operators. Implemented tenant-aware Spring Boot REST APIs with Spring Security and PostgreSQL, covering inventory, orders, allocation, fulfillment, shipments, and service accountability. Delivered React/TypeScript and Capacitor Android clients with automated tests, Docker Compose, and GitHub Actions CI.
+### [MerHouse — B2B Fulfillment Coordination Platform](https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026)
+
+Built a role-aware B2B platform for merchants, warehouse providers, and operators. Implemented tenant-aware Spring Boot REST APIs with Spring Security and PostgreSQL, covering inventory, allocation, orders, fulfillment, shipments, and service accountability. Delivered React/TypeScript and Capacitor Android clients with automated tests, Docker Compose, and GitHub Actions CI.
 
 **Stack:** Java 21, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, React/TypeScript, Docker, GitHub Actions
 
-### [EventFlow](https://github.com/Mr-Wolv/EventFlow_Bakr101_2026)
-Distributed event-driven backend with two independently deployable Spring Boot services, Kafka-based asynchronous processing, at-least-once delivery, idempotency, retry and dead-letter handling, and Kubernetes deployment through Strimzi.
+### [EventFlow — Distributed Event-Driven Backend](https://github.com/Mr-Wolv/EventFlow_Bakr101_2026)
 
-It also includes an AWS serverless variant using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. The AWS path is integration-tested locally with LocalStack, including enforced IAM, duplicate-delivery validation, durable idempotency, and automated CI verification. No production AWS deployment is claimed.
+Built two independently deployable Spring Boot services using Kafka, at-least-once delivery, event-ID idempotency, retries, and dead-letter handling; deployed with Strimzi on Kubernetes. Implemented an AWS serverless variant with SQS, Lambda, DynamoDB, S3, IAM, and Terraform, validated locally with LocalStack. No production AWS deployment is claimed.
 
-**Stack:** Java 25, Spring Boot 3.5, Apache Kafka, Kubernetes, AWS SQS/Lambda/DynamoDB/S3, Terraform, LocalStack, Docker, GitHub Actions
+**Stack:** Java 25, Spring Boot 3.5, Apache Kafka, Kubernetes, AWS, Terraform, LocalStack, GitHub Actions
 
-### [QueryForge](https://github.com/Mr-Wolv/QueryForge_Bakr101_2026)
-PostgreSQL performance-engineering service built around reproducible k6 experiments on a deterministic 1M-row catalog. A workload-shaped composite index reduced filtered-search p95 from 8.18 s to 130 ms (~63×) at 10 req/s. Also compared OFFSET and keyset pagination, index ordering, and concurrency up to 200 users with `EXPLAIN (ANALYZE, BUFFERS)`.
+### [QueryForge — PostgreSQL Performance Engineering](https://github.com/Mr-Wolv/QueryForge_Bakr101_2026)
 
-**Stack:** Java 25, Spring Boot, PostgreSQL 17, Docker, k6
+Built reproducible k6 benchmarks for a deterministic 1M-row PostgreSQL catalog. A workload-shaped composite index reduced filtered-search p95 from 8.18 s to 130 ms (~63x) at 10 req/s. Compared OFFSET and keyset pagination, index ordering, and workloads up to 200 concurrent users; used EXPLAIN (ANALYZE, BUFFERS) to identify the 10-connection pool as the next measured bottleneck.
 
-## More work
+**Stack:** Java 25, Spring Boot 3.5.5, PostgreSQL 17, Docker, k6
+
+## Achievements
+
+- #1 nationally in Computer Science across Faculties of Science — Cairo University, Faculty of Science academic distinction.
+- #2 in Mathematics at Cairo University — Cairo University academic distinction.
+- #7 nationally in Mathematics across Faculties of Science — Cairo University, Faculty of Science academic distinction.
+
+## Languages
+
+Arabic — Native | English — C1-level proficiency
+
+## Additional
+
+Problem Solving: [LeetCode](https://leetcode.com/u/Mr_Wolv/) and [Repo](https://github.com/Mr-Wolv/LeetCode_Bakr101_2024)
 
 Chess Studio and Engineering Tooling are also public for deeper technical review.
 
