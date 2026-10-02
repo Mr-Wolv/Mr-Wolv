@@ -2,7 +2,7 @@
 
 **Location:** El Basatin, Cairo, Egypt
 
-Recent Computer Science graduate, ranked #1 nationally in Computer Science, focused on Java 21/25 backend engineering with Spring Boot and PostgreSQL. Built role-aware platforms, Kafka-based services, and reproducible database performance experiments. Project work spans Docker, CI/CD, Kubernetes, and AWS serverless workflows validated locally with LocalStack.
+Recent Computer Science graduate, ranked #1 nationally in Computer Science, focused on Java backend engineering with Spring Boot and PostgreSQL across Java 21 (MerHouse) and Java 25 (EventFlow Kafka services and QueryForge). Built role-aware platforms, event-driven services, and reproducible database performance experiments. Project work spans Docker, CI/CD, Kubernetes, and AWS serverless workflows validated locally with LocalStack.
 
 ## Skills
 
