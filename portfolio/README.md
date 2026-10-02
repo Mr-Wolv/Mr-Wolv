@@ -4,7 +4,7 @@ A dark, engineering-focused personal portfolio built with React + Vite and deplo
 
 ## Current positioning
 
-- Computer Science graduate focused on backend / software engineering
+- Backend developer focused on backend / software engineering
 - Core backend stack: Java, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL
 - Distributed systems: Apache Kafka, Event-Driven Architecture, Kubernetes
 - Cloud & infrastructure: AWS (SQS, Lambda, DynamoDB, S3, IAM), Terraform, LocalStack
@@ -13,10 +13,9 @@ A dark, engineering-focused personal portfolio built with React + Vite and deplo
 
 ## Selected work
 
-- **MerHouse** - B2B fulfillment coordination platform
+- **MerHouse** - role-aware full-stack B2B fulfillment platform spanning inventory, inbound stock, order creation/import, allocation, fulfillment, exceptions, shipments, notifications, service accountability, and multi-surface delivery
 - **EventFlow** - distributed event-driven backend with Kafka + Kubernetes primary deployment and an AWS serverless variant
 - **QueryForge** - PostgreSQL performance engineering and controlled benchmarking
-- **LeetCode / Problem Solving** - multi-language algorithms and SQL practice
 
 Wordle Strat-Console, Chess Studio, and Engineering Tooling remain available in the site's additional work section and on GitHub.
 
