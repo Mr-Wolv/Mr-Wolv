@@ -18,10 +18,6 @@ Recent Computer Science graduate, ranked #1 nationally in Computer Science, focu
 B.Sc. in Computer Science · Oct 2021 - Jan 2026  
 GPA: 3.289 out of 5 · Very Good with Honors
 
-## Achievements
-
-Ranked #1 nationally in Computer Science and #7 nationally in Mathematics across Faculties of Science, Egypt (2026 graduates) | #2 in Mathematics at Cairo University
-
 ## Projects
 
 ### [MerHouse — B2B Fulfillment Coordination Platform](https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026)
@@ -45,6 +41,10 @@ Ranked #1 nationally in Computer Science and #7 nationally in Mathematics across
 - Compared OFFSET and keyset pagination, index ordering, and workloads up to 200 concurrent users; identified the 10-connection pool as the next measured bottleneck using EXPLAIN (ANALYZE, BUFFERS).
 
 **Stack:** Java 25, Spring Boot 3.5.5, PostgreSQL 17, Docker, k6
+
+## Achievements
+
+Ranked #1 nationally in Computer Science and #7 nationally in Mathematics across Faculties of Science, Egypt (2026 graduates) | #2 in Mathematics at Cairo University
 
 ## Languages
 
