@@ -5,12 +5,16 @@ Recent Computer Science graduate focused on backend engineering with Java/Spring
 ## Core stack
 
 - **Programming:** Java, Python, C++, C#, JavaScript, SQL
-- **Additional skills:** Linux; AI-assisted software development (agentic workflows); algorithms and problem solving (data structures, binary search, tree traversal, backtracking, dynamic programming); [340 LeetCode problems solved](https://leetcode.com/u/Mr_Wolv/) as of Oct 2026 (205 Easy, 123 Medium, 12 Hard); [problem-solving repository](https://github.com/Mr-Wolv/LeetCode_Bakr101_2024).
+- **Additional skills:** Linux, Algorithms, AI-assisted software development (agentic workflows).
 - **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs
 - **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB
 - **Systems & Cloud:** Apache Kafka, Event-Driven Architecture, Kubernetes, AWS services (SQS, Lambda, DynamoDB, S3, IAM; locally validated with LocalStack), Terraform
 - **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, GitHub Actions, CI/CD, Maven, Flyway
 - **Frontend:** React, TypeScript, Vite
+
+## Problem Solving
+
+[LeetCode](https://leetcode.com/u/Mr_Wolv/) and [Repo](https://github.com/Mr-Wolv/LeetCode_Bakr101_2024)
 
 ## Projects
 

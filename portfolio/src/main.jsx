@@ -12,6 +12,8 @@ const profile = {
   merhouseApi: 'https://m7mdhbkr-merhouse-backend.hf.space',
   eventflow: 'https://github.com/Mr-Wolv/EventFlow_Bakr101_2026',
   queryforge: 'https://github.com/Mr-Wolv/QueryForge_Bakr101_2026',
+  leetcode: 'https://leetcode.com/u/Mr_Wolv/',
+  problemSolvingRepo: 'https://github.com/Mr-Wolv/LeetCode_Bakr101_2024',
   chess: 'https://github.com/Mr-Wolv/Chess_Studio',
   skillsRepo: 'https://github.com/Mr-Wolv/Skill_Playground_Bakr101_2026',
   baseUrl: import.meta.env.BASE_URL
@@ -25,7 +27,7 @@ const skills = [
   ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB'],
   ['Systems & Cloud:', 'Apache Kafka · Event-Driven Architecture · Kubernetes · AWS services (SQS · Lambda · DynamoDB · S3 · IAM; locally validated with LocalStack) · Terraform'],
   ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · GitHub Actions · CI/CD · Maven · Flyway'],
-  ['Additional Skills:', 'Linux · AI-assisted software development (agentic workflows) · Algorithms & problem solving: data structures, binary search, tree traversal, backtracking, dynamic programming · 340 LeetCode problems solved (205 Easy, 123 Medium, 12 Hard; as of Oct 2026)'],
+  ['Additional Skills:', 'Linux · Algorithms · AI-assisted software development (agentic workflows)'],
   ['Frontend:', 'React · TypeScript · Vite'],
 ];
 
@@ -116,7 +118,7 @@ function App() {
             <div className="project-side"><div className="architecture"><span>REST API</span><b>↓</b><span>Spring Boot</span><b>↓</b><span>PostgreSQL</span><b>↕</b><span>k6 benchmarks</span></div><small>Dataset scaling · query plans · indexing · keyset pagination · concurrency experiments</small></div>
           </article>
 
-          <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>
+          <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>\n          <p className="problem-solving-links"><strong>Problem Solving:</strong> <a href={profile.leetcode} target="_blank" rel="noreferrer">LeetCode</a> and <a href={profile.problemSolvingRepo} target="_blank" rel="noreferrer">Repo</a></p>
           <div className="work-grid">
             <article className="work-card"><span className="card-index">04</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
             <article className="work-card"><span className="card-index">05</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
