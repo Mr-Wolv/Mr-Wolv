@@ -25,7 +25,7 @@ const skills = [
   ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB'],
   ['Systems & Cloud:', 'Apache Kafka · Event-Driven Architecture · Kubernetes · AWS services (SQS · Lambda · DynamoDB · S3 · IAM; locally validated with LocalStack) · Terraform'],
   ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · GitHub Actions · CI/CD · Maven · Flyway'],
-  ['Algorithms & Problem Solving:', 'Data structures · Algorithm design'],
+  ['Additional Skills:', 'Linux · AI-assisted software development (agentic workflows) · LeetCode problem solving · Competitive programming'],
   ['Frontend:', 'React · TypeScript · Vite'],
 ];
 
