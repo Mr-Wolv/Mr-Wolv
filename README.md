@@ -14,11 +14,7 @@ Recent Computer Science graduate focused on backend engineering with Java/Spring
 ## Projects
 
 ### [MerHouse](https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026)
-Built a role-aware B2B fulfillment platform connecting merchants, warehouse providers, and platform operators across inventory, inbound stock, order creation/import, allocation, fulfillment, exceptions, shipments, notifications, and service accountability.
-
-Implemented Spring Boot REST APIs with validation, Spring Security authentication/authorization, tenant-aware access control, PostgreSQL persistence, Flyway migrations, transactional outbox, inventory locking, partial allocation/backorders, shipment state transitions, and OpenAPI.
-
-Delivered React/TypeScript web and Capacitor Android surfaces with automated backend/frontend tests, Docker Compose, GitHub Actions CI, browser and native route verification, and documented deployment and quality workflows.
+Built a role-aware B2B fulfillment platform for merchants, warehouse providers, and platform operators. Implemented tenant-aware Spring Boot REST APIs with Spring Security and PostgreSQL, covering inventory, orders, allocation, fulfillment, shipments, and service accountability. Delivered React/TypeScript and Capacitor Android clients with automated tests, Docker Compose, and GitHub Actions CI.
 
 **Stack:** Java 21, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, React/TypeScript, Docker, GitHub Actions
 
@@ -30,9 +26,7 @@ It also includes an AWS serverless variant using SQS, Lambda, DynamoDB, S3, IAM,
 **Stack:** Java 25, Spring Boot 3.5, Apache Kafka, Kubernetes, AWS SQS/Lambda/DynamoDB/S3, Terraform, LocalStack, Docker, GitHub Actions
 
 ### [QueryForge](https://github.com/Mr-Wolv/QueryForge_Bakr101_2026)
-PostgreSQL performance-engineering service built to run controlled, reproducible experiments against a 1M-row catalog.
-
-Measured dataset scaling, query-plan behavior, workload-shaped indexing, OFFSET vs keyset pagination, index-ordering alternatives, and concurrency saturation using k6 and `EXPLAIN (ANALYZE, BUFFERS)`.
+PostgreSQL performance-engineering service built around reproducible k6 experiments on a deterministic 1M-row catalog. A workload-shaped composite index reduced filtered-search p95 from 8.18 s to 130 ms (~63×) at 10 req/s. Also compared OFFSET and keyset pagination, index ordering, and concurrency up to 200 users with `EXPLAIN (ANALYZE, BUFFERS)`.
 
 **Stack:** Java 25, Spring Boot, PostgreSQL 17, Docker, k6
 
