@@ -16,8 +16,6 @@ Recent Computer Science graduate focused on backend engineering with Java/Spring
 
 [LeetCode](https://leetcode.com/u/Mr_Wolv/) and [Repo](https://github.com/Mr-Wolv/LeetCode_Bakr101_2024)
 
-LeetCode status (Oct 2026): 340 solved (205 Easy, 123 Medium, 12 Hard)
-
 ## Projects
 
 ### [MerHouse](https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026)

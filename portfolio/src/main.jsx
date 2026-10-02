@@ -119,7 +119,6 @@ function App() {
           </article>
 
           <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>\n          <p className="problem-solving-links"><strong>Problem Solving:</strong> <a href={profile.leetcode} target="_blank" rel="noreferrer">LeetCode</a> and <a href={profile.problemSolvingRepo} target="_blank" rel="noreferrer">Repo</a></p>
-          <p className="problem-solving-status">LeetCode status (Oct 2026): 340 solved (205 Easy, 123 Medium, 12 Hard)</p>
           <div className="work-grid">
             <article className="work-card"><span className="card-index">04</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
             <article className="work-card"><span className="card-index">05</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
