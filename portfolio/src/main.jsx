@@ -26,6 +26,7 @@ const skills = [
   ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB'],
   ['Systems & Cloud:', 'Apache Kafka · Event-Driven Architecture · Kubernetes · AWS services (SQS · Lambda · DynamoDB · S3 · IAM; locally validated with LocalStack) · Terraform'],
   ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · GitHub Actions · CI/CD · Maven · Flyway'],
+  ['Algorithms & Problem Solving:', 'Data structures · Divide and conquer · Dynamic programming · Graph/search algorithms · Game-tree search · Information gain'],
   ['Frontend:', 'React · TypeScript · Vite'],
 ];
 
@@ -118,7 +119,7 @@ function App() {
 
           <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>
           <div className="work-grid">
-            <article className="work-card"><span className="card-index">04</span><h3>Wordle Strat-Console</h3><p>A deterministic game solver retained as an algorithms project, with web, CLI, and desktop delivery paths.</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">04</span><h3>Wordle Strat-Console</h3><p>A Python game-tree strategy solver that ranks guesses by information gain and win probability; exhaustively verified across 47,814 games in six modes with zero failures (maximum six guesses).</p><a href={profile.wordle} target="_blank" rel="noreferrer">Read the solver repo <Arrow /></a></article>
             <article className="work-card"><span className="card-index">05</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
             <article className="work-card"><span className="card-index">06</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
           </div>

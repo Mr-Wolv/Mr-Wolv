@@ -5,6 +5,7 @@ Recent Computer Science graduate focused on backend engineering with Java/Spring
 ## Core stack
 
 - **Programming:** Java, Python, C++, C#, JavaScript, SQL
+- **Algorithms & problem solving:** Data structures, divide and conquer, dynamic programming, graph and search algorithms — evidenced in [Wordle Strat-Console](https://github.com/Mr-Wolv/Wordle_Solver) and [algorithm coursework](https://github.com/Mr-Wolv/Algo_CS305_2023)
 - **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs
 - **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB
 - **Systems & Cloud:** Apache Kafka, Event-Driven Architecture, Kubernetes, AWS services (SQS, Lambda, DynamoDB, S3, IAM; locally validated with LocalStack), Terraform
@@ -32,7 +33,7 @@ PostgreSQL performance-engineering service built around reproducible k6 experime
 
 ## More work
 
-Wordle Strat-Console, Chess Studio, and Engineering Tooling remain public on GitHub for deeper technical review.
+Wordle Strat-Console is a Python strategy solver using game-tree search, information gain, and win-probability scoring; exhaustive replay covered 47,814 games across six modes with zero failures and a six-guess maximum. Chess Studio and Engineering Tooling are also public for deeper technical review.
 
 ## How I work
 
