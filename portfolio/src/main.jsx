@@ -49,7 +49,7 @@ function App() {
           <div className="hero-copy">
             <div className="status"><i /> Available for software engineering opportunities</div>
             <h1>Backend-focused engineer who likes to <em>understand the system</em> before building it.</h1>
-            <p className="hero-lede">Junior backend developer focused on Java 21/25 and Spring Boot, databases, distributed systems, and practical cloud engineering.</p>
+            <p className="hero-lede">Junior backend developer focused on Java backend systems with Spring Boot and PostgreSQL, using Java 21 in MerHouse and Java 25 in EventFlow's Kafka services and QueryForge.</p>
             <div className="hero-actions">
               <a className="button primary" href="#work">Explore my work <Arrow /></a>
               <a className="button ghost" href={resumeUrl}>View CV <Arrow /></a>
@@ -106,10 +106,10 @@ function App() {
             <div className="project-number">03</div>
             <div className="project-body">
               <div className="project-title-row"><div><p className="project-kicker">DATABASE & PERFORMANCE ENGINEERING</p><h3>QueryForge</h3></div><span className="pill">PostgreSQL performance</span></div>
-              <p className="project-description">A Spring Boot service for reproducible PostgreSQL experiments across dataset scale, query plans, indexing, pagination, and concurrency. At 1M rows, a workload-shaped index reduced filtered-search p95 from 8.18 s to 130 ms (~63×) at 10 req/s.</p>
+              <p className="project-description">A Spring Boot service for reproducible PostgreSQL experiments across dataset scale, query plans, indexing, pagination, and concurrency. At 1M rows, a workload-shaped index reduced filtered-search p95 from 8.18 s to 130 ms (~63x) at 10 req/s.</p>
               <div className="tag-row"><span>Java 25</span><span>Spring Boot 3.5.5</span><span>PostgreSQL 17</span><span>Docker</span><span>k6</span><span>EXPLAIN ANALYZE</span><span>Testcontainers</span><span>GitHub Actions</span></div>
               <div className="project-links"><a href={profile.queryforge} target="_blank" rel="noreferrer">Source, benchmarks & evidence <Arrow /></a></div>
-              <p className="muted">At 1M rows, filtered-search p95 fell from 8.18 s to 130 ms (~63×) after a workload-shaped index; further experiments identified the connection pool as the next measured bottleneck.</p>
+              <p className="muted">At 1M rows, filtered-search p95 fell from 8.18 s to 130 ms (~63x) after a workload-shaped index; further experiments identified the connection pool as the next measured bottleneck.</p>
             </div>
             <div className="project-side"><div className="architecture"><span>REST API</span><b>↓</b><span>Spring Boot</span><b>↓</b><span>PostgreSQL</span><b>↕</b><span>k6 benchmarks</span></div><small>Dataset scaling · query plans · indexing · keyset pagination · concurrency experiments</small></div>
           </article>
