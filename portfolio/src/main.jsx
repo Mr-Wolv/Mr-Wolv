@@ -20,14 +20,12 @@ const profile = {
 const resumeUrl = `${profile.baseUrl}cv.html`;
 
 const skills = [
-  ['Programming:', 'Java · Python · C++ · C# · JavaScript · SQL · OOP · Data Structures · Algorithms · Problem Solving'],
+  ['Languages:', 'Java · Python · C++ · C# · JavaScript · SQL'],
   ['Backend:', 'Spring Boot · Spring Security · Spring Data JPA · Hibernate · REST APIs'],
-  ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB'],
-  ['Systems & Cloud:', 'Linux · Apache Kafka · Event-Driven Architecture · Kubernetes · AWS services (SQS · Lambda · DynamoDB · S3 · IAM; locally validated with LocalStack) · Terraform'],
-  ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · GitHub Actions · CI/CD · Maven · Flyway'],
-  ['Frontend:', 'React · TypeScript · Vite'],
-  ['Development Workflow:', 'AI-assisted software development (agentic workflows)'],
-];
+  ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB · Flyway'],
+  ['Systems & Cloud:', 'Linux · Apache Kafka · Event-Driven Architecture · Kubernetes · AWS (SQS · Lambda · DynamoDB · S3 · IAM; LocalStack validated) · Terraform'],
+  ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · GitHub Actions · Maven'],
+];;
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 function SectionLabel({ children }) { return <p className="eyebrow">{children}</p>; }
@@ -51,7 +49,7 @@ function App() {
           <div className="hero-copy">
             <div className="status"><i /> Available for software engineering opportunities</div>
             <h1>Backend-focused engineer who likes to <em>understand the system</em> before building it.</h1>
-            <p className="hero-lede">Junior backend developer focused on Java/Spring Boot, databases, distributed systems, and practical cloud engineering.</p>
+            <p className="hero-lede">Junior backend developer focused on Java 21/25 and Spring Boot, databases, distributed systems, and practical cloud engineering.</p>
             <div className="hero-actions">
               <a className="button primary" href="#work">Explore my work <Arrow /></a>
               <a className="button ghost" href={resumeUrl}>View CV <Arrow /></a>
@@ -131,7 +129,7 @@ function App() {
               <p>I built EventFlow to study distributed event processing and also implemented a serverless AWS variant using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. The AWS path was integration-tested locally with LocalStack under enforced IAM and automated in CI; I do not present it as a production AWS deployment.</p>
               <p>I built QueryForge to study database behavior rather than assume it: deterministic datasets, execution-plan analysis, workload-shaped indexes, pagination strategies, and concurrency experiments are all backed by reproducible measurements.</p>
               <p>I also work across C# and other supporting languages alongside my Java background. C#/.NET is not presented as my primary production stack.</p>
-              <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Started October 2021 · Graduated January 2026 · GPA 3.289 out of 5 · Very Good with Honors</span></div>
+              <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Oct 2021 - Jan 2026 · GPA 3.289 out of 5 · Very Good with Honors</span></div>
             </div>
           </div>
         </section>
@@ -144,9 +142,9 @@ function App() {
         <section className="section container achievements">
           <SectionLabel>04 · Academic achievement</SectionLabel>
           <div className="achievement-grid">
-            <div><strong>#1</strong><span>Nationally in Computer Science across Faculties of Science · 2026 graduate cohort</span></div>
+            <div><strong>#1</strong><span>Nationally in Computer Science across Faculties of Science, Egypt · 2026 graduate cohort</span></div>
             <div><strong>#2</strong><span>Mathematics at Cairo University · 2026 graduate cohort</span></div>
-            <div><strong>#7</strong><span>Nationally in Mathematics across Faculties of Science · 2026 graduate cohort</span></div>
+            <div><strong>#7</strong><span>Nationally in Mathematics across Faculties of Science, Egypt · 2026 graduate cohort</span></div>
           </div>
         </section>
 
