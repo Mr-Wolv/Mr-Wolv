@@ -12,8 +12,6 @@ const profile = {
   merhouseApi: 'https://m7mdhbkr-merhouse-backend.hf.space',
   eventflow: 'https://github.com/Mr-Wolv/EventFlow_Bakr101_2026',
   queryforge: 'https://github.com/Mr-Wolv/QueryForge_Bakr101_2026',
-  leetcode: 'https://leetcode.com/u/Mr_Wolv/',
-  problemSolvingRepo: 'https://github.com/Mr-Wolv/LeetCode_Bakr101_2024',
   chess: 'https://github.com/Mr-Wolv/Chess_Studio',
   skillsRepo: 'https://github.com/Mr-Wolv/Skill_Playground_Bakr101_2026',
   baseUrl: import.meta.env.BASE_URL
@@ -22,13 +20,13 @@ const profile = {
 const resumeUrl = `${profile.baseUrl}cv.html`;
 
 const skills = [
-  ['Programming:', 'Java · Python · C++ · C# · JavaScript · SQL'],
+  ['Programming:', 'Java · Python · C++ · C# · JavaScript · SQL · OOP · Data Structures · Algorithms · Problem Solving'],
   ['Backend:', 'Spring Boot · Spring Security · Spring Data JPA · Hibernate · REST APIs'],
   ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB'],
-  ['Systems & Cloud:', 'Apache Kafka · Event-Driven Architecture · Kubernetes · AWS services (SQS · Lambda · DynamoDB · S3 · IAM; locally validated with LocalStack) · Terraform'],
+  ['Systems & Cloud:', 'Linux · Apache Kafka · Event-Driven Architecture · Kubernetes · AWS services (SQS · Lambda · DynamoDB · S3 · IAM; locally validated with LocalStack) · Terraform'],
   ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · GitHub Actions · CI/CD · Maven · Flyway'],
-  ['Additional Skills:', 'Linux · Algorithms · AI-assisted software development (agentic workflows)'],
   ['Frontend:', 'React · TypeScript · Vite'],
+  ['Development Workflow:', 'AI-assisted software development (agentic workflows)'],
 ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
@@ -118,7 +116,7 @@ function App() {
             <div className="project-side"><div className="architecture"><span>REST API</span><b>↓</b><span>Spring Boot</span><b>↓</b><span>PostgreSQL</span><b>↕</b><span>k6 benchmarks</span></div><small>Dataset scaling · query plans · indexing · keyset pagination · concurrency experiments</small></div>
           </article>
 
-          <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>\n          <p className="problem-solving-links"><strong>Problem Solving:</strong> <a href={profile.leetcode} target="_blank" rel="noreferrer">LeetCode</a> and <a href={profile.problemSolvingRepo} target="_blank" rel="noreferrer">Repo</a></p>
+          <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>\n          
           <div className="work-grid">
             <article className="work-card"><span className="card-index">04</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
             <article className="work-card"><span className="card-index">05</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
@@ -133,7 +131,7 @@ function App() {
               <p>I built EventFlow to study distributed event processing and also implemented a serverless AWS variant using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. The AWS path was integration-tested locally with LocalStack under enforced IAM and automated in CI; I do not present it as a production AWS deployment.</p>
               <p>I built QueryForge to study database behavior rather than assume it: deterministic datasets, execution-plan analysis, workload-shaped indexes, pagination strategies, and concurrency experiments are all backed by reproducible measurements.</p>
               <p>I also work across C# and other supporting languages alongside my Java background. C#/.NET is not presented as my primary production stack.</p>
-              <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Graduated January 2026 · GPA 3.289 / 5 · Very Good with Honors</span></div>
+              <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Started October 2021 · Graduated January 2026 · GPA 3.289 out of 5 · Very Good with Honors</span></div>
             </div>
           </div>
         </section>
@@ -146,14 +144,14 @@ function App() {
         <section className="section container achievements">
           <SectionLabel>04 · Academic achievement</SectionLabel>
           <div className="achievement-grid">
-            <div><strong>#1</strong><span>Nationally in Computer Science across Faculties of Science</span></div>
-            <div><strong>#2</strong><span>Mathematics department · Cairo University</span></div>
-            <div><strong>#7</strong><span>Nationally in Mathematics across Faculties of Science</span></div>
+            <div><strong>#1</strong><span>Among 2026 graduates: ranked #1 nationally in Computer Science across Faculties of Science</span></div>
+            <div><strong>#2</strong><span>Among 2026 graduates: ranked #2 in Mathematics at Cairo University</span></div>
+            <div><strong>#7</strong><span>Among 2026 graduates: ranked #7 nationally in Mathematics across Faculties of Science</span></div>
           </div>
         </section>
 
         <section id="contact" className="contact-section">
-          <div className="container contact-inner"><div><SectionLabel>05 · Contact</SectionLabel><h2>Have a problem worth building?</h2><p>I'm open to junior software engineering opportunities, internships, and serious engineering projects.</p></div><a className="contact-email" href={`mailto:${profile.email}`}>{profile.email} <Arrow /></a></div>
+          <div className="container contact-inner"><div><SectionLabel>05 · Contact</SectionLabel><h2>Have a problem worth building?</h2><p>Based in El Basatin, Cairo, Egypt. I'm open to junior software engineering opportunities, internships, and serious engineering projects.</p></div><a className="contact-email" href={`mailto:${profile.email}`}>{profile.email} <Arrow /></a></div>
         </section>
       </main>
 
