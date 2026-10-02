@@ -25,8 +25,7 @@ const skills = [
   ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB · Flyway'],
   ['Systems & Cloud:', 'Linux · Apache Kafka · Event-Driven Architecture · Kubernetes · AWS (SQS · Lambda · DynamoDB · S3 · IAM; LocalStack validated) · Terraform'],
   ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · GitHub Actions · Maven'],
-];;
-
+];
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 function SectionLabel({ children }) { return <p className="eyebrow">{children}</p>; }
 
@@ -70,7 +69,7 @@ function App() {
             </div>
             <div className="hero-facts">
               <div><strong>JAVA</strong><span>Primary backend stack</span></div>
-              <div><strong>#1</strong><span>National CS ranking*</span></div>
+              <div><strong>#1</strong><span>National CS ranking · 2026 cohort</span></div>
             </div>
           </aside>
         </section>
@@ -83,7 +82,11 @@ function App() {
             <div className="project-number">01</div>
             <div className="project-body">
               <div className="project-title-row"><div><p className="project-kicker">FLAGSHIP PROJECT</p><h3>MerHouse</h3></div><span className="pill">B2B fulfillment</span></div>
-              <p className="project-description">Built a role-aware B2B fulfillment platform for merchants, warehouse providers, and operators, covering inventory, inbound stock, orders, allocation, fulfillment, exceptions, shipments, notifications, and service accountability. Implemented tenant-aware Spring Boot REST APIs with Spring Security and PostgreSQL, including transactional outbox, inventory locking, partial allocation/backorders, shipment state transitions, and OpenAPI. Delivered React/TypeScript and Capacitor Android clients with automated tests, Docker Compose, and GitHub Actions CI.</p>
+              <ul className="project-bullets">
+                <li>Built a role-aware B2B fulfillment platform for merchants, warehouse providers, and platform operators, covering inventory, inbound stock, orders, allocation, fulfillment, exceptions, shipments, notifications, and service accountability.</li>
+                <li>Implemented tenant-aware Spring Boot REST APIs with Spring Security and PostgreSQL, including transactional outbox, inventory locking, partial allocation/backorders, shipment state transitions, and OpenAPI.</li>
+                <li>Delivered React/TypeScript and Capacitor Android clients with automated tests. Packaged with Docker Compose and automated CI through GitHub Actions.</li>
+              </ul>
               <div className="tag-row"><span>Java 21</span><span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span><span>React</span><span>TypeScript</span><span>Capacitor</span><span>Docker</span><span>GitHub Actions</span></div>
               <div className="project-links"><a href={profile.merhouseLive} target="_blank" rel="noreferrer">Live app <Arrow /></a><a href={profile.merhouse} target="_blank" rel="noreferrer">Source & documentation <Arrow /></a><a href={profile.merhouseApi} target="_blank" rel="noreferrer">Backend <Arrow /></a></div>
             </div>
@@ -94,7 +97,10 @@ function App() {
             <div className="project-number">02</div>
             <div className="project-body">
               <div className="project-title-row"><div><p className="project-kicker">DISTRIBUTED SYSTEMS PROJECT</p><h3>EventFlow</h3></div><span className="pill">Kafka + AWS paths</span></div>
-              <p className="project-description">Two Spring Boot services demonstrate Kafka-based asynchronous processing, idempotency, retries, and dead-letter handling, deployed with Strimzi on Kubernetes. An AWS serverless variant uses SQS, Lambda, DynamoDB, S3, IAM, and Terraform; it is validated locally with LocalStack.</p>
+              <ul className="project-bullets">
+                <li>Built two independently deployable Spring Boot services using Kafka, at-least-once processing, event-ID idempotency, retries, and dead-letter handling; deployed with Strimzi on Kubernetes and verified in-cluster smoke tests.</li>
+                <li>Implemented an AWS serverless variant using SQS, Lambda (Java 21), DynamoDB, S3, IAM, and Terraform. Validated locally with LocalStack, including IAM enforcement and durable idempotency; no production AWS deployment is claimed.</li>
+              </ul>
               <div className="tag-row"><span>Java 25</span><span>Spring Boot 3.5</span><span>Kafka</span><span>Kubernetes</span><span>AWS</span><span>SQS</span><span>Lambda</span><span>DynamoDB</span><span>S3</span><span>Terraform</span><span>LocalStack</span><span>GitHub Actions</span></div>
               <div className="project-links"><a href={profile.eventflow} target="_blank" rel="noreferrer">Source & documentation <Arrow /></a></div>
               <p className="muted">AWS path validated locally with LocalStack and enforced IAM; duplicate delivery and durable idempotency are covered by integration validation and CI. No production AWS deployment is claimed.</p>
@@ -106,15 +112,15 @@ function App() {
             <div className="project-number">03</div>
             <div className="project-body">
               <div className="project-title-row"><div><p className="project-kicker">DATABASE & PERFORMANCE ENGINEERING</p><h3>QueryForge</h3></div><span className="pill">PostgreSQL performance</span></div>
-              <p className="project-description">A Spring Boot service for reproducible PostgreSQL experiments across dataset scale, query plans, indexing, pagination, and concurrency. At 1M rows, a workload-shaped index reduced filtered-search p95 from 8.18 s to 130 ms (~63x) at 10 req/s.</p>
+              <p className="project-description">A Spring Boot service for reproducible PostgreSQL experiments across dataset scale, query plans, indexing, pagination, and concurrency. At 1M rows, a workload-shaped composite index reduced filtered-search p95 from 8.18 s to 130 ms (~63x) at 10 req/s.</p>
               <div className="tag-row"><span>Java 25</span><span>Spring Boot 3.5.5</span><span>PostgreSQL 17</span><span>Docker</span><span>k6</span><span>EXPLAIN ANALYZE</span><span>Testcontainers</span><span>GitHub Actions</span></div>
               <div className="project-links"><a href={profile.queryforge} target="_blank" rel="noreferrer">Source, benchmarks & evidence <Arrow /></a></div>
-              <p className="muted">At 1M rows, filtered-search p95 fell from 8.18 s to 130 ms (~63x) after a workload-shaped index; further experiments identified the connection pool as the next measured bottleneck.</p>
+              <p className="muted">Compared OFFSET and keyset pagination, index ordering, and workloads up to 200 concurrent users; EXPLAIN (ANALYZE, BUFFERS) identified the 10-connection pool as the next measured bottleneck.</p>
             </div>
             <div className="project-side"><div className="architecture"><span>REST API</span><b>↓</b><span>Spring Boot</span><b>↓</b><span>PostgreSQL</span><b>↕</b><span>k6 benchmarks</span></div><small>Dataset scaling · query plans · indexing · keyset pagination · concurrency experiments</small></div>
           </article>
 
-          <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>\n          
+          <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>
           <div className="work-grid">
             <article className="work-card"><span className="card-index">04</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
             <article className="work-card"><span className="card-index">05</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
