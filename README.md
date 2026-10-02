@@ -2,28 +2,25 @@
 
 **Location:** El Basatin, Cairo, Egypt
 
-Recent Computer Science graduate focused on Java backend engineering with Spring Boot and PostgreSQL. Built role-aware platforms, Kafka-based services, and reproducible database performance experiments. Project work includes Docker, CI/CD, Kubernetes, and AWS integrations validated locally with LocalStack.
+Recent Computer Science graduate, ranked #1 nationally in Computer Science, focused on Java 21/25 backend engineering with Spring Boot and PostgreSQL. Built role-aware platforms, Kafka-based services, and reproducible database performance experiments. Project work spans Docker, CI/CD, Kubernetes, and AWS serverless workflows validated locally with LocalStack.
 
 ## Skills
 
-- **Programming:** Java, Python, C++, C#, JavaScript, SQL, OOP, Data Structures, Algorithms, Problem Solving
+- **Languages:** Java, Python, C++, C#, JavaScript, SQL
 - **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs
-- **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB
-- **Systems & Cloud:** Linux, Apache Kafka, Event-Driven Architecture, Kubernetes, AWS services (SQS, Lambda, DynamoDB, S3, IAM; locally validated with LocalStack), Terraform
-- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, GitHub Actions, CI/CD, Maven, Flyway
-- **Frontend:** React, TypeScript, Vite
-- **Development Workflow:** AI-assisted software development (agentic workflows)
+- **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB, Flyway
+- **Systems & Cloud:** Linux, Apache Kafka, Event-Driven Architecture, Kubernetes, AWS (SQS, Lambda, DynamoDB, S3, IAM; LocalStack validated), Terraform
+- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, GitHub Actions, Maven
 
 ## Education
 
 **Cairo University — Faculty of Science**  
-B.Sc. in Computer Science · Started October 2021 · Graduated January 2026  
+B.Sc. in Computer Science · Oct 2021 - Jan 2026  
 GPA: 3.289 out of 5 · Very Good with Honors
 
 ## Achievements
 
-- Among 2026 graduates: ranked #1 nationally in Computer Science and #7 nationally in Mathematics across Faculties of Science.
-- Also ranked #2 in Mathematics at Cairo University.
+Ranked #1 nationally in Computer Science and #7 nationally in Mathematics across Faculties of Science, Egypt (2026 graduates) | #2 in Mathematics at Cairo University
 
 ## Projects
 
