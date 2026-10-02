@@ -1,6 +1,6 @@
-# Muhammad Bakr - Computer Science Graduate | Backend / Software Engineering
+# Muhammad Bakr - Backend Developer
 
-Computer Science graduate from Cairo University focused on backend development, software engineering, distributed systems, databases, and practical cloud engineering.
+Backend developer focused on Java/Spring Boot, PostgreSQL, distributed systems, and practical cloud engineering.
 
 ## Core stack
 
@@ -10,12 +10,16 @@ Computer Science graduate from Cairo University focused on backend development, 
 - **Cloud & infrastructure:** AWS (SQS, Lambda, DynamoDB, S3, IAM), Terraform, LocalStack
 - **Engineering:** Docker, GitHub Actions, CI/CD, Maven, Flyway, JUnit, Mockito, Testcontainers
 - **Frontend:** React, TypeScript, Vite
-- **Languages & problem solving:** Java, Python, C++, C#, JavaScript, algorithms
+- **Programming:** Java, Python, C++, C#, JavaScript, SQL
 
 ## Projects
 
 ### [MerHouse](https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026)
-B2B fulfillment coordination platform demonstrating backend application engineering, security, persistence, migrations, automated testing, Docker, CI/CD, and multi-surface delivery.
+Built a role-aware B2B fulfillment platform connecting merchants, warehouse providers, and platform operators across inventory, inbound stock, order creation/import, allocation, fulfillment, exceptions, shipments, notifications, and service accountability.
+
+Implemented Spring Boot REST APIs with validation, Spring Security authentication/authorization, tenant-aware access control, PostgreSQL persistence, Flyway migrations, transactional outbox, inventory locking, partial allocation/backorders, shipment state transitions, and OpenAPI.
+
+Delivered React/TypeScript web and Capacitor Android surfaces with automated backend/frontend tests, Docker Compose, GitHub Actions CI, browser and native route verification, and documented deployment and quality workflows.
 
 **Stack:** Java 21, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, React/TypeScript, Docker, GitHub Actions
 
@@ -32,9 +36,6 @@ PostgreSQL performance-engineering service built to run controlled, reproducible
 Measured dataset scaling, query-plan behavior, workload-shaped indexing, OFFSET vs keyset pagination, index-ordering alternatives, and concurrency saturation using k6 and `EXPLAIN (ANALYZE, BUFFERS)`.
 
 **Stack:** Java 25, Spring Boot, PostgreSQL 17, Docker, k6
-
-### [LeetCode / Problem Solving](https://github.com/Mr-Wolv/LeetCode_Bakr101_2024)
-Long-running practice repository covering algorithms, data structures, SQL, and structured problem solving across Java, Python, JavaScript, and C#.
 
 ## More work
 
