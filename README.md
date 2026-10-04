@@ -10,7 +10,7 @@ Recent Computer Science graduate, ranked #1 nationally in Computer Science, focu
 - **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs
 - **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB, Flyway
 - **Systems & Cloud:** Linux, Apache Kafka, Event-Driven Architecture, Kubernetes, AWS (SQS, Lambda, DynamoDB, S3, IAM; LocalStack validated), Terraform
-- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, GitHub Actions, Maven
+- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, Git, GitHub Actions, Maven
 
 ## Education
 
