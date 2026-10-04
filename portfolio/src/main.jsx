@@ -24,7 +24,7 @@ const skills = [
   ['Backend:', 'Spring Boot · Spring Security · Spring Data JPA · Hibernate · REST APIs'],
   ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB · Flyway'],
   ['Systems & Cloud:', 'Linux · Apache Kafka · Event-Driven Architecture · Kubernetes · AWS (SQS · Lambda · DynamoDB · S3 · IAM; LocalStack validated) · Terraform'],
-  ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · GitHub Actions · Maven'],
+  ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · Git · GitHub Actions · Maven'],
 ];
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 function SectionLabel({ children }) { return <p className="eyebrow">{children}</p>; }
