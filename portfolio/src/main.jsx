@@ -27,7 +27,7 @@ const skills = [
   ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB · Flyway'],
   ['Systems & Cloud:', 'Linux · Apache Kafka · Event-Driven Architecture · Kubernetes · AWS (SQS · Lambda · DynamoDB · S3 · IAM; LocalStack validated) · Terraform'],
   ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Git · GitHub Actions · Maven'],
-  ['Concepts:', 'Object-oriented programming · data structures & algorithms · JSON · unit & integration testing'],
+  ['Concepts:', 'OOP/object-oriented programming · data structures & algorithms · collections & streams · JSON · unit tests & integration tests · version control'],
 ];
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 function SectionLabel({ children }) { return <p className="eyebrow">{children}</p>; }
@@ -102,7 +102,7 @@ function App() {
               <div className="project-title-row"><div><p className="project-kicker">DISTRIBUTED SYSTEMS PROJECT</p><h3>EventFlow</h3></div><span className="pill">Kafka + AWS paths</span></div>
               <ul className="project-bullets">
                 <li>Built two independently deployable Spring Boot microservices using Kafka, at-least-once processing, event-ID idempotency, retries, and dead-letter handling; deployed with Strimzi on Kubernetes, smoke-tested in-cluster.</li>
-                <li>Implemented an AWS serverless variant using SQS, Lambda (Java 21), DynamoDB, S3, IAM, and Terraform. Validated locally with LocalStack, including IAM enforcement and durable idempotency; no production AWS deployment is claimed.</li>
+                <li>Implemented an AWS serverless variant using SQS, Lambda (Java 21), DynamoDB, S3, IAM, and Terraform. Validated locally with LocalStack: enforced IAM, durable idempotency; no production AWS deployment is claimed.</li>
               </ul>
               <div className="tag-row"><span>Java 25</span><span>Spring Boot 3.5</span><span>Kafka</span><span>Kubernetes</span><span>AWS</span><span>SQS</span><span>Lambda</span><span>DynamoDB</span><span>S3</span><span>Terraform</span><span>LocalStack</span><span>GitHub Actions</span></div>
               <div className="project-links"><a href={profile.eventflow} target="_blank" rel="noreferrer">Source & documentation <Arrow /></a></div>
