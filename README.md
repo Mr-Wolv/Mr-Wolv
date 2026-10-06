@@ -7,7 +7,7 @@ Backend Developer and recent Computer Science graduate, focused on Java backend 
 ## Skills
 
 - **Languages:** Java, Python, C++, C#, JavaScript, SQL
-- **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs
+- **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs, Microservices
 - **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB, Flyway
 - **Systems & Cloud:** Linux, Apache Kafka, Event-Driven Architecture, Kubernetes, AWS (SQS, Lambda, DynamoDB, S3, IAM; LocalStack validated), Terraform
 - **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, Git, GitHub Actions, Maven
@@ -22,7 +22,7 @@ GPA: 3.289 out of 5 · Very Good with Honors
 
 ### [MerHouse — B2B Fulfillment Coordination Platform](https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026)
 
-- Built a role-aware B2B fulfillment platform for merchants, warehouse providers, and platform operators, covering inventory, inbound stock, orders, allocation, fulfillment, exceptions, shipments, notifications, and service accountability.
+- Built a role-aware B2B fulfillment platform for merchants, warehouse providers, and operators, covering inventory, inbound stock, orders, allocation, fulfillment, exceptions, shipments, notifications, and service accountability.
 - Implemented tenant-aware Spring Boot REST APIs with Spring Security and PostgreSQL, including transactional outbox, inventory locking, partial allocation/backorders, shipment state transitions, and OpenAPI.
 - Delivered React/TypeScript and Capacitor Android clients with automated tests. Packaged with Docker Compose and automated CI through GitHub Actions.
 
@@ -30,7 +30,7 @@ GPA: 3.289 out of 5 · Very Good with Honors
 
 ### [EventFlow — Distributed Event-Driven Backend](https://github.com/Mr-Wolv/EventFlow_Bakr101_2026)
 
-- Built two independently deployable Spring Boot services using Kafka, at-least-once processing, event-ID idempotency, retries, and dead-letter handling; deployed with Strimzi on Kubernetes and verified in-cluster smoke tests.
+- Built two independently deployable Spring Boot microservices using Kafka, at-least-once processing, event-ID idempotency, retries, and dead-letter handling; deployed with Strimzi on Kubernetes, smoke-tested in-cluster.
 - Implemented an AWS serverless variant using SQS, Lambda (Java 21), DynamoDB, S3, IAM, and Terraform. Validated locally with LocalStack, including IAM enforcement and durable idempotency; no production AWS deployment is claimed.
 
 **Stack:** Java 25, Spring Boot 3.5, Apache Kafka, Kubernetes, AWS, Terraform, LocalStack, GitHub Actions
