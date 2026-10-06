@@ -12,12 +12,14 @@ const profile = {
   merhouseApi: 'https://m7mdhbkr-merhouse-backend.hf.space',
   eventflow: 'https://github.com/Mr-Wolv/EventFlow_Bakr101_2026',
   queryforge: 'https://github.com/Mr-Wolv/QueryForge_Bakr101_2026',
+  reconcile: 'https://github.com/Mr-Wolv/Reconcile_Bakr101_2026',
   chess: 'https://github.com/Mr-Wolv/Chess_Studio',
   skillsRepo: 'https://github.com/Mr-Wolv/Skill_Playground_Bakr101_2026',
   baseUrl: import.meta.env.BASE_URL
 };
 
 const resumeUrl = `${profile.baseUrl}cv.html`;
+const resumePdfUrl = `${profile.baseUrl}cv.pdf`;
 
 const skills = [
   ['Languages:', 'Java · Python · C++ · C# · JavaScript · SQL'],
@@ -48,7 +50,7 @@ function App() {
           <div className="hero-copy">
             <div className="status"><i /> Available for software engineering opportunities</div>
             <h1>Backend-focused engineer who likes to <em>understand the system</em> before building it.</h1>
-            <p className="hero-lede">Junior backend developer focused on Java backend systems with Spring Boot and PostgreSQL, using Java 21 in MerHouse and Java 25 in EventFlow's Kafka services and QueryForge.</p>
+            <p className="hero-lede">Junior backend developer focused on Java backend systems with Spring Boot and PostgreSQL, using Java 21 in MerHouse and Java 25 in EventFlow's Kafka services, QueryForge, and Reconcile.</p>
             <div className="hero-actions">
               <a className="button primary" href="#work">Explore my work <Arrow /></a>
               <a className="button ghost" href={resumeUrl}>View CV <Arrow /></a>
@@ -120,10 +122,22 @@ function App() {
             <div className="project-side"><div className="architecture"><span>REST API</span><b>↓</b><span>Spring Boot</span><b>↓</b><span>PostgreSQL</span><b>↕</b><span>k6 benchmarks</span></div><small>Dataset scaling · query plans · indexing · keyset pagination · concurrency experiments</small></div>
           </article>
 
+          <article className="project-feature project-feature-secondary">
+            <div className="project-number">04</div>
+            <div className="project-body">
+              <div className="project-title-row"><div><p className="project-kicker">FINANCIAL CORRECTNESS &amp; RELIABILITY</p><h3>Reconcile</h3></div><span className="pill">Payment reconciliation</span></div>
+              <p className="project-description">A payments backend where correctness, auditability, and reconciliation are the product: a double-entry ledger whose invariants are enforced by the database, signed webhook ingestion over raw bytes with replay protection, and deterministic reconciliation of ledger-derived expectations against external settlement records across 50 subjects and all nine outcomes, byte for byte.</p>
+              <div className="tag-row"><span>Java 25</span><span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL 18</span><span>Flyway</span><span>Docker</span><span>GitHub Actions</span><span>Testcontainers</span></div>
+              <div className="project-links"><a href={profile.reconcile} target="_blank" rel="noreferrer">Source &amp; documentation <Arrow /></a></div>
+              <p className="muted">Verified by 354 tests (353 passed, 1 deliberately skipped, 0 failed), including idempotency under 32 concurrent retries. Validated prototype: not production-ready, not PCI compliant, and no real payment processing is claimed.</p>
+            </div>
+            <div className="project-side"><div className="architecture"><span>Payments API</span><b>↓</b><span>Double-entry ledger</span><b>↓</b><span>PostgreSQL 18</span><b>↕</b><span>Reconciliation engine</span></div><small>Database-enforced invariants · signed webhooks · idempotent APIs · append-only audit trail</small></div>
+          </article>
+
           <div className="section-head work-subhead"><h2>More work.</h2><p>Other projects remain public for deeper technical review.</p></div>
           <div className="work-grid">
-            <article className="work-card"><span className="card-index">04</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
-            <article className="work-card"><span className="card-index">05</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">05</span><h3>Chess Studio</h3><p>A Windows chess application with an MVC-inspired structure, Stockfish integration, packaged releases, and CI-driven builds.</p><a href={profile.chess} target="_blank" rel="noreferrer">Read the project repo <Arrow /></a></article>
+            <article className="work-card"><span className="card-index">06</span><h3>Engineering Tooling</h3><p>A governed engineering-skill repository with catalog validation, mirror parity checks, documentation, and automation for AI-assisted development workflows.</p><a href={profile.skillsRepo} target="_blank" rel="noreferrer">Explore the tooling repo <Arrow /></a></article>
           </div>
         </section>
 
@@ -143,6 +157,7 @@ function App() {
               <p>I am a backend developer most interested in building reliable backend and full-stack systems. Java and Spring Boot are my strongest backend tools, while my project work has also taken me through databases, frontend systems, Docker, CI, distributed systems, cloud infrastructure, and multiple supporting languages.</p>
               <p>I built EventFlow to study distributed event processing and also implemented a serverless AWS variant using SQS, Lambda, DynamoDB, S3, IAM, and Terraform. The AWS path was integration-tested locally with LocalStack under enforced IAM and automated in CI; I do not present it as a production AWS deployment.</p>
               <p>I built QueryForge to study database behavior rather than assume it: deterministic datasets, execution-plan analysis, workload-shaped indexes, pagination strategies, and concurrency experiments are all backed by reproducible measurements.</p>
+              <p>I built Reconcile to treat financial correctness as an engineering problem: the invariants live in the database rather than in application code, and the reconciliation engine derives its expected side independently from the ledger so every comparison is genuinely two-sided.</p>
               <p>I also work across C# and other supporting languages alongside my Java background. C#/.NET is not presented as my primary production stack.</p>
               <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Oct 2021 - Jan 2026 · GPA 3.289 out of 5 · Very Good with Honors</span></div>
             </div>
@@ -161,7 +176,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="footer container"><span>© {new Date().getFullYear()} {profile.name}</span><div><a href={profile.github} target="_blank" rel="noreferrer">GitHub</a><a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a><a href={resumeUrl}>CV</a><a href={`mailto:${profile.email}`}>Email</a></div></footer>
+      <footer className="footer container"><span>© {new Date().getFullYear()} {profile.name}</span><div><a href={profile.github} target="_blank" rel="noreferrer">GitHub</a><a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a><a href={resumeUrl}>CV</a><a href={resumePdfUrl}>CV (PDF)</a><a href={`mailto:${profile.email}`}>Email</a></div></footer>
     </div>
   );
 }

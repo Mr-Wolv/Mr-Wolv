@@ -2,7 +2,7 @@
 
 **Location:** El Basatin, Cairo, Egypt
 
-Recent Computer Science graduate, ranked #1 nationally in Computer Science, focused on Java backend engineering with Spring Boot and PostgreSQL across Java 21 (MerHouse) and Java 25 (EventFlow Kafka services and QueryForge). Built role-aware platforms, event-driven services, and reproducible database performance experiments. Project work spans Docker, CI/CD, Kubernetes, and AWS serverless workflows validated locally with LocalStack.
+Backend Developer and recent Computer Science graduate, focused on Java backend engineering with Spring Boot and PostgreSQL. Built role-aware platforms, event-driven services, financial reconciliation systems, and reproducible database performance experiments across Java 21 and Java 25. Project work spans Docker, CI/CD, Kubernetes, and AWS serverless workflows validated locally with LocalStack.
 
 ## Skills
 
@@ -41,6 +41,13 @@ GPA: 3.289 out of 5 · Very Good with Honors
 - Compared OFFSET and keyset pagination, index ordering, and workloads up to 200 concurrent users; identified the 10-connection pool as the next measured bottleneck using EXPLAIN (ANALYZE, BUFFERS).
 
 **Stack:** Java 25, Spring Boot 3.5.5, PostgreSQL 17, Docker, k6
+
+### [Reconcile — Payment & Settlement Reconciliation Engine](https://github.com/Mr-Wolv/Reconcile_Bakr101_2026)
+
+- Built a double-entry payments backend where the database enforces the financial invariants - 23 tables, 36 indexes, 10 triggers - across a create-authorize-capture-settle-refund lifecycle, payouts, and an append-only audit trail reconstructable from the database alone.
+- Ingested signed provider webhooks over the raw bytes with replay protection, proved idempotency under 32 concurrent retries, and reconciled ledger-derived expectations against settlement records deterministically across 50 subjects and all nine outcomes, byte for byte; 354 tests (353 passed, 1 deliberately skipped, 0 failed). Validated prototype: not production-ready, not PCI compliant, no real payment processing.
+
+**Stack:** Java 25, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL 18, Flyway, Docker, GitHub Actions
 
 ## Achievements
 
