@@ -7,10 +7,10 @@ Junior Backend Developer and recent Computer Science graduate, focused on Java b
 ## Skills
 
 - **Languages:** Java, Python, C++, C#, JavaScript, SQL
-- **Backend:** Spring Boot, Spring Security, Spring Data JPA, Spring MVC, Hibernate, REST APIs, Microservices
+- **Backend:** Spring Boot, Spring Security, Spring Data JPA, Spring MVC, Hibernate, REST APIs, RESTful APIs, Microservices
 - **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB, Flyway
 - **Systems & Cloud:** Linux, Apache Kafka, Event-Driven Architecture, Kubernetes, AWS (SQS, Lambda, DynamoDB, S3, IAM; LocalStack validated), Terraform
-- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Git, GitHub Actions, Maven
+- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Git, GitHub Actions, Maven, CI/CD
 - **Concepts:** OOP/object-oriented programming, data structures & algorithms, collections & streams, JSON, unit tests & integration tests, version control
 
 ## Education
