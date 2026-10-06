@@ -2,15 +2,16 @@
 
 **Location:** El Basatin, Cairo, Egypt
 
-Backend Developer and recent Computer Science graduate, focused on Java backend engineering with Spring Boot and PostgreSQL. Built role-aware platforms, event-driven services, financial reconciliation systems, and reproducible database performance experiments across Java 21 and Java 25. Project work spans Docker, CI/CD, Kubernetes, and AWS serverless workflows validated locally with LocalStack.
+Junior Backend Developer and recent Computer Science graduate, focused on Java backend engineering with Spring Boot and PostgreSQL. Built role-aware platforms, event-driven services, financial reconciliation systems, and reproducible database performance experiments across Java 21 and Java 25. Project work spans Docker, CI/CD, Kubernetes, and AWS serverless workflows validated locally with LocalStack.
 
 ## Skills
 
 - **Languages:** Java, Python, C++, C#, JavaScript, SQL
-- **Backend:** Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST APIs, Microservices
+- **Backend:** Spring Boot, Spring Security, Spring Data JPA, Spring MVC, Hibernate, REST APIs, Microservices
 - **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB, Flyway
 - **Systems & Cloud:** Linux, Apache Kafka, Event-Driven Architecture, Kubernetes, AWS (SQS, Lambda, DynamoDB, S3, IAM; LocalStack validated), Terraform
-- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Docker Compose, Git, GitHub Actions, Maven
+- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Git, GitHub Actions, Maven
+- **Concepts:** Object-oriented programming, data structures & algorithms, JSON, unit & integration testing
 
 ## Education
 

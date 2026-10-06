@@ -23,10 +23,11 @@ const resumePdfUrl = `${profile.baseUrl}cv.pdf`;
 
 const skills = [
   ['Languages:', 'Java · Python · C++ · C# · JavaScript · SQL'],
-  ['Backend:', 'Spring Boot · Spring Security · Spring Data JPA · Hibernate · REST APIs · Microservices'],
+  ['Backend:', 'Spring Boot · Spring Security · Spring Data JPA · Spring MVC · Hibernate · REST APIs · Microservices'],
   ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB · Flyway'],
   ['Systems & Cloud:', 'Linux · Apache Kafka · Event-Driven Architecture · Kubernetes · AWS (SQS · Lambda · DynamoDB · S3 · IAM; LocalStack validated) · Terraform'],
-  ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Docker Compose · Git · GitHub Actions · Maven'],
+  ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Git · GitHub Actions · Maven'],
+  ['Concepts:', 'Object-oriented programming · data structures & algorithms · JSON · unit & integration testing'],
 ];
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 function SectionLabel({ children }) { return <p className="eyebrow">{children}</p>; }
