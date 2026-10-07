@@ -11,7 +11,7 @@ Junior Java Backend Developer and recent Computer Science graduate, focused on J
 - **Data:** PostgreSQL, MySQL, Oracle SQL/PLSQL, MongoDB, Flyway
 - **Systems & Cloud:** Linux, Apache Kafka, Event-Driven Architecture, Kubernetes, AWS (SQS, Lambda, DynamoDB, S3, IAM; LocalStack validated), Terraform
 - **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Postman, Docker, Git, GitHub Actions, Maven, Gradle, CI/CD
-- **Concepts:** OOP/object-oriented programming, SOLID principles, Design Patterns, data structures & algorithms, collections & streams, multithreading & concurrency, exception handling, JSON, SDLC, Agile/Scrum, Problem Solving, unit tests & integration tests, version control
+- **Concepts:** OOP/object-oriented programming, SOLID principles, Design Patterns, Clean Code, data structures & algorithms, collections & streams, multithreading & concurrency, exception handling, JSON, SDLC, Agile/Scrum, Problem Solving, unit tests & integration tests, version control
 
 ## Education
 
