@@ -7,17 +7,17 @@ Junior Java Backend Developer and recent Computer Science graduate, focused on J
 ## Skills
 
 - **Languages:** Java, Python, C++, C#, JavaScript, SQL
-- **Backend:** Spring Framework (Spring Boot, Spring Security, Spring Data JPA, Spring MVC), Hibernate, REST APIs, RESTful APIs, Microservices, JDBC
+- **Backend:** Spring Framework (Spring Boot, Spring Security, Spring Data JPA, Spring MVC), Hibernate, REST APIs, RESTful APIs, Microservices, JDBC, JWT
 - **Data:** PostgreSQL, MySQL, Oracle SQL/PLSQL, MongoDB, Flyway
 - **Systems & Cloud:** Linux, Apache Kafka, Event-Driven Architecture, Kubernetes, AWS (SQS, Lambda, DynamoDB, S3, IAM; LocalStack validated), Terraform
 - **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Postman, Docker, Git, GitHub Actions, Maven, Gradle, CI/CD
-- **Concepts:** OOP/object-oriented programming, SOLID principles, Design Patterns, Clean Code, data structures & algorithms, collections & streams, multithreading & concurrency, exception handling, JSON, SDLC, Agile/Scrum, Problem Solving, unit tests & integration tests, version control
+- **Concepts:** OOP/object-oriented programming, SOLID principles, Design Patterns, Clean Code, data structures & algorithms, collections & streams, multithreading & concurrency, exception handling, Transactions, JSON, SDLC, Agile/Scrum, Problem Solving, unit tests & integration tests, version control
 
 ## Education
 
 **Cairo University — Faculty of Science**  
 Bachelor of Science (B.Sc.) in Computer Science · Oct 2021 - Jan 2026  
-GPA: 3.289 out of 5 · Very Good with Honors
+GPA: 3.289 out of 5 · Very Good with Honors · Military Status: Exempted
 
 ## Projects / Relevant Experience
 
