@@ -23,11 +23,11 @@ const resumePdfUrl = `${profile.baseUrl}cv.pdf`;
 
 const skills = [
   ['Languages:', 'Java · Python · C++ · C# · JavaScript · SQL'],
-  ['Backend:', 'Spring Boot · Spring Security · Spring Data JPA · Spring MVC · Hibernate · REST APIs · RESTful APIs · Microservices'],
-  ['Data:', 'PostgreSQL · Oracle SQL/PLSQL · MongoDB · Flyway'],
+  ['Backend:', 'Spring Framework (Spring Boot · Spring Security · Spring Data JPA · Spring MVC) · Hibernate · REST APIs · RESTful APIs · Microservices · JDBC'],
+  ['Data:', 'PostgreSQL · MySQL · Oracle SQL/PLSQL · MongoDB · Flyway'],
   ['Systems & Cloud:', 'Linux · Apache Kafka · Event-Driven Architecture · Kubernetes · AWS (SQS · Lambda · DynamoDB · S3 · IAM; LocalStack validated) · Terraform'],
-  ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Docker · Git · GitHub Actions · Maven · CI/CD'],
-  ['Concepts:', 'OOP/object-oriented programming · data structures & algorithms · collections & streams · JSON · unit tests & integration tests · version control'],
+  ['Testing & Delivery:', 'JUnit 5 · Mockito · Testcontainers · OpenAPI/Swagger · Postman · Docker · Git · GitHub Actions · Maven · Gradle · CI/CD'],
+  ['Concepts:', 'OOP/object-oriented programming · SOLID principles · Design Patterns · data structures & algorithms · collections & streams · multithreading & concurrency · exception handling · JSON · SDLC · Agile/Scrum · Problem Solving · unit tests & integration tests · version control'],
 ];
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 function SectionLabel({ children }) { return <p className="eyebrow">{children}</p>; }
@@ -51,7 +51,7 @@ function App() {
           <div className="hero-copy">
             <div className="status"><i /> Available for software engineering opportunities</div>
             <h1>Backend-focused engineer who likes to <em>understand the system</em> before building it.</h1>
-            <p className="hero-lede">Junior backend developer focused on Java backend systems with Spring Boot and PostgreSQL, using Java 21 in MerHouse and Java 25 in EventFlow's Kafka services, QueryForge, and Reconcile.</p>
+            <p className="hero-lede">Junior Java Backend Developer focused on Java backend systems with Spring Boot and PostgreSQL, using Java 21 in MerHouse and Java 25 in EventFlow's Kafka services, QueryForge, and Reconcile.</p>
             <div className="hero-actions">
               <a className="button primary" href="#work">Explore my work <Arrow /></a>
               <a className="button ghost" href={resumeUrl}>View CV <Arrow /></a>
@@ -160,7 +160,7 @@ function App() {
               <p>I built QueryForge to study database behavior rather than assume it: deterministic datasets, execution-plan analysis, workload-shaped indexes, pagination strategies, and concurrency experiments are all backed by reproducible measurements.</p>
               <p>I built Reconcile to treat financial correctness as an engineering problem: the invariants live in the database rather than in application code, and the reconciliation engine derives its expected side independently from the ledger so every comparison is genuinely two-sided.</p>
               <p>I also work across C# and other supporting languages alongside my Java background. C#/.NET is not presented as my primary production stack.</p>
-              <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>B.Sc. Computer Science</strong><span>Oct 2021 - Jan 2026 · GPA 3.289 out of 5 · Very Good with Honors</span></div>
+              <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>Bachelor of Science (B.Sc.) in Computer Science</strong><span>Oct 2021 - Jan 2026 · GPA 3.289 out of 5 · Very Good with Honors</span></div>
             </div>
           </div>
         </section>

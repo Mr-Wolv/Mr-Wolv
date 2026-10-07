@@ -1,25 +1,25 @@
-# Muhammad Bakr - Junior Backend Developer
+# Muhammad Bakr - Junior Java Backend Developer
 
 **Location:** El Basatin, Cairo, Egypt
 
-Junior Backend Developer and recent Computer Science graduate, focused on Java backend engineering with Spring Boot and PostgreSQL. Built role-aware platforms, event-driven services, financial reconciliation systems, and reproducible database performance experiments across Java 21 and Java 25. Project work spans Docker, CI/CD, Kubernetes, and AWS serverless workflows validated locally with LocalStack.
+Junior Java Backend Developer and recent Computer Science graduate, focused on Java backend engineering with Spring Boot and PostgreSQL. Built role-aware platforms, event-driven services, financial reconciliation systems, and reproducible database performance experiments across Java 21 and Java 25. Project work spans Docker, CI/CD, Kubernetes, and AWS serverless workflows validated locally with LocalStack.
 
 ## Skills
 
 - **Languages:** Java, Python, C++, C#, JavaScript, SQL
-- **Backend:** Spring Boot, Spring Security, Spring Data JPA, Spring MVC, Hibernate, REST APIs, RESTful APIs, Microservices
-- **Data:** PostgreSQL, Oracle SQL/PLSQL, MongoDB, Flyway
+- **Backend:** Spring Framework (Spring Boot, Spring Security, Spring Data JPA, Spring MVC), Hibernate, REST APIs, RESTful APIs, Microservices, JDBC
+- **Data:** PostgreSQL, MySQL, Oracle SQL/PLSQL, MongoDB, Flyway
 - **Systems & Cloud:** Linux, Apache Kafka, Event-Driven Architecture, Kubernetes, AWS (SQS, Lambda, DynamoDB, S3, IAM; LocalStack validated), Terraform
-- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Docker, Git, GitHub Actions, Maven, CI/CD
-- **Concepts:** OOP/object-oriented programming, data structures & algorithms, collections & streams, JSON, unit tests & integration tests, version control
+- **Testing & Delivery:** JUnit 5, Mockito, Testcontainers, OpenAPI/Swagger, Postman, Docker, Git, GitHub Actions, Maven, Gradle, CI/CD
+- **Concepts:** OOP/object-oriented programming, SOLID principles, Design Patterns, data structures & algorithms, collections & streams, multithreading & concurrency, exception handling, JSON, SDLC, Agile/Scrum, Problem Solving, unit tests & integration tests, version control
 
 ## Education
 
 **Cairo University — Faculty of Science**  
-B.Sc. in Computer Science · Oct 2021 - Jan 2026  
+Bachelor of Science (B.Sc.) in Computer Science · Oct 2021 - Jan 2026  
 GPA: 3.289 out of 5 · Very Good with Honors
 
-## Projects
+## Projects / Relevant Experience
 
 ### [MerHouse — B2B Fulfillment Coordination Platform](https://github.com/Mr-Wolv/MerHouseSuite_Bakr101_2026)
 
