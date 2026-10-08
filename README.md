@@ -17,7 +17,7 @@ Junior Java Backend Developer and recent Computer Science graduate, focused on J
 
 **Cairo University — Faculty of Science**  
 Bachelor of Science (B.Sc.) in Computer Science · Oct 2021 - Jan 2026  
-GPA: 3.289 out of 5 · Very Good with Honors · Military Status: Exempted
+GPA: 3.289 out of 5 · Very Good with Honors
 
 ## Projects
 

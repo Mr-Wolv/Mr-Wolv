@@ -160,7 +160,7 @@ function App() {
               <p>I built QueryForge to study database behavior rather than assume it: deterministic datasets, execution-plan analysis, workload-shaped indexes, pagination strategies, and concurrency experiments are all backed by reproducible measurements.</p>
               <p>I built Reconcile to treat financial correctness as an engineering problem: the invariants live in the database rather than in application code, and the reconciliation engine derives its expected side independently from the ledger so every comparison is genuinely two-sided.</p>
               <p>I also work across C# and other supporting languages alongside my Java background. C#/.NET is not presented as my primary production stack.</p>
-              <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>Bachelor of Science (B.Sc.) in Computer Science</strong><span>Oct 2021 - Jan 2026 · GPA 3.289 out of 5 · Very Good with Honors · Military Status: Exempted</span></div>
+              <div className="education"><span>CAIRO UNIVERSITY · FACULTY OF SCIENCE</span><strong>Bachelor of Science (B.Sc.) in Computer Science</strong><span>Oct 2021 - Jan 2026 · GPA 3.289 out of 5 · Very Good with Honors</span></div>
             </div>
           </div>
         </section>
