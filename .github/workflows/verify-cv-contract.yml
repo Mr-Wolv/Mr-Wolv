@@ -1,0 +1,70 @@
+name: Verify CV contract (site side)
+
+# Mirror-side counterpart of the cv repo's verify workflow: every push here
+# runs the same tools/verify_render.py contract, so site pushes are checked
+# too - not just CV pushes. The contract lives in the private Mr-Wolv/cv
+# repo; it is checked out read-only with the CV_DEPLOY_KEY deploy key and
+# run from there, with CV_SITE_REPO pointing at this checkout.
+#
+# tools/wait_for_sync.py first polls the cv checkout (bounded, ~5 min) until
+# its canonical cv.html/cv.pdf byte-match this push's hosted copies - so a
+# site push racing its canonical push no longer goes red. If the canonical
+# never lands that is real drift: the gate fails, and so does the job.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out canonical CV repository (read-only deploy key)
+        uses: actions/checkout@v4
+        with:
+          repository: Mr-Wolv/cv
+          path: cv
+          ssh-key: ${{ secrets.CV_DEPLOY_KEY }}
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Wait for canonical CV to match this push (bounded)
+        env:
+          CV_DEPLOY_KEY: ${{ secrets.CV_DEPLOY_KEY }}
+          WAIT_ATTEMPTS: "15"
+          WAIT_INTERVAL: "20"
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$CV_DEPLOY_KEY" > ~/.ssh/cv_deploy_key
+          chmod 600 ~/.ssh/cv_deploy_key
+          # env GIT_SSH_COMMAND beats any persisted git ssh config: the gate's
+          # refresh() must be able to fetch cv main with the deploy key
+          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/cv_deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
+          python cv/tools/wait_for_sync.py --canonical cv --mirror . --refresh canonical
+
+      - name: Install pinned dependencies
+        run: pip install pymupdf==1.28.2 python-docx==1.2.0
+
+      - name: Confirm headless Chrome is available
+        run: google-chrome --version
+
+      - name: Run the CV contract
+        env:
+          CV_SITE_REPO: ${{ github.workspace }}
+        # --fail-on-skip: a missing mirror checkout must fail the job,
+        # never pass as green with half the contract unchecked.
+        run: python cv/tools/verify_render.py --fail-on-skip
